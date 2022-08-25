@@ -13,6 +13,6 @@ module.exports = {
 		docs: "sumup"
 	},
 	do: (locale, message) => {
-		return message.channel.send(string(locale, "GITHUB_REPO", { link: "https://github.com/Suggester/Suggester" }));
+		return message.channel.send(string(locale, "GITHUB_REPO", { link: "https://github.com/chirusxs/Suggester" }));
 	}
 };
