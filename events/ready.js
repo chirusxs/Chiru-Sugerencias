@@ -33,10 +33,8 @@ module.exports = async (Discord, client) => {
 	}
 
 	let presences = [
-		["PLAYING", `See the latest updates by using "@${client.user.username} changelog"`],
-		["WATCHING", async () => `${(await Suggestion.countDocuments())} suggestions`],
-		["PLAYING", `Vote for Suggester and get rewards! Use "@${client.user.username} vote" for more info`],
-		["PLAYING", `Join our support server! Use "@${client.user.username}" support for more info`]
+		["PLAYING", `Envía una sugerencia con el comando >suggest`],
+		["WATCHING", async () => `${(await Suggestion.countDocuments())} sugerencias`]
 	];
 
 	let p = 0;
@@ -74,7 +72,7 @@ module.exports = async (Discord, client) => {
 		blapi.manualPost(totalGuildCount, client.user.id, lists, null, guildCounts.length, guildCounts);
 	}
 
-	if (client.user.id === "564426594144354315" && client.shard.ids[0] === client.shard.count-1 && process.env.NODE_ENV === "production" && lists) {
+	if (client.user.id === "1012133227818930226" && client.shard.ids[0] === client.shard.count-1 && process.env.NODE_ENV === "production" && lists) {
 		await post();
 		client.setInterval(async function() {
 			await post();
