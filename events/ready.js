@@ -37,6 +37,16 @@ module.exports = async (Discord, client) => {
 		["WATCHING", async () => `${(await Suggestion.countDocuments())} sugerencias`]
 	];
 
+	let p = 0;
+	async function setPresence() {
+		let presence = presences[p];
+		let type = presence[0];
+		let text = presence[1];
+		if (typeof text == "function")
+			text = await text();
+		client.user.setActivity(`${text}`, { type });
+		p = p+1 === presences.length ? 0 : p+1;
+	}
 	await setPresence();
 	client.setInterval(async function() {
 		await setPresence();
