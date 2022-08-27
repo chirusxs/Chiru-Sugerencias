@@ -955,7 +955,7 @@ module.exports = {
 						let linkMatch = args[2].match(/trello.com\/b\/([a-zA-Z0-9]+)/);
 						if (!linkMatch) return message.channel.send(string(locale, "NO_BOARD_SPECIFIED_ERROR", {}, "error"));
 						t.getBoardMembers(linkMatch[1]).then(members => {
-							if (!members.find(m => m.username === "suggester_bot")) return message.channel.send(string(locale, "INVALID_BOARD_SPECIFIED_ERROR", {}, "error"));
+							if (!members.find(m => m.username === "chirusxsoficial")) return message.channel.send(string(locale, "INVALID_BOARD_SPECIFIED_ERROR", {}, "error"));
 							qServerDB.config.trello.board = linkMatch[1];
 							qServerDB.save();
 							return message.channel.send(string(locale, "TRELLO_BOARD_SET_SUCCESS", {code: linkMatch[1]}, "success"));
