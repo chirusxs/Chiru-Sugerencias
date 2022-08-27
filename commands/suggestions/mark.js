@@ -54,8 +54,8 @@ module.exports = {
 		let statusInput = args[1];
 		let shifted = false;
 		if (!status(args[1])[0]) {
-			let m = await message.channel.send(`${string(locale, "NONE_OR_INVALID_STATUS_ERROR", { x: `<:${emoji.x}>`, list: `<:simplemented:822458050161147914> ${string(locale, "STATUS_IMPLEMENTED")}\n<:sprogress:822458050374795295> ${string(locale, "STATUS_PROGRESS")}\n<:sconsidernum:1013175390757470269> ${string(locale, "STATUS_CONSIDERATION")}\n<:sdefault:842488332562071612> ${string(locale, "STATUS_DEFAULT")}\n<:sno:822458049801355315> ${string(locale, "STATUS_NO")}` })}`);
-			let emotes = [["simplementednum:1013175340077686904", "implemented"], ["sworkingnum:1013175378308780122", "working"], ["sconsidernum:1013175390757470269", "consider"], ["sdefaultnum2:1013175525889544272", "default"], ["snonum:1013175540192120862", "no"], [emoji.x, "cancel"]];
+			let m = await message.channel.send(`${string(locale, "NONE_OR_INVALID_STATUS_ERROR", { x: `<:${emoji.x}>`, list: `<:implementada:831769404253143081> ${string(locale, "STATUS_IMPLEMENTED")}\n<:EnProgreso:831769404722642945> ${string(locale, "STATUS_PROGRESS")}\n<:considerando:831769404449882142> ${string(locale, "STATUS_CONSIDERATION")}\n<:default:831769405083615262> ${string(locale, "STATUS_DEFAULT")}\n<:sugerenciano:831769405045866536> ${string(locale, "STATUS_NO")}` })}`);
+			let emotes = [["implementada:831769404253143081", "implemented"], ["EnProgreso:831769404722642945", "working"], ["considerando:831769404449882142", "consider"], ["default:831769405083615262", "default"], ["sugerenciano:831769405045866536", "no"], [emoji.x, "cancel"]];
 			const filter = ({ emoji }, { id }) => emotes.find(em => em[0] === `${emoji.name}:${emoji.id}`) && id === message.author.id;
 
 			for await (let emote of emotes) await m.react(emote[0]);
