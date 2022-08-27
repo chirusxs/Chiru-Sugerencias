@@ -55,7 +55,7 @@ module.exports = {
 		let shifted = false;
 		if (!status(args[1])[0]) {
 			let m = await message.channel.send(`${string(locale, "NONE_OR_INVALID_STATUS_ERROR", { x: `<:${emoji.x}>`, list: `<:simplemented:822458050161147914> ${string(locale, "STATUS_IMPLEMENTED")}\n<:sprogress:822458050374795295> ${string(locale, "STATUS_PROGRESS")}\n<:sconsidernum:1013175390757470269> ${string(locale, "STATUS_CONSIDERATION")}\n<:sdefault:842488332562071612> ${string(locale, "STATUS_DEFAULT")}\n<:sno:822458049801355315> ${string(locale, "STATUS_NO")}` })}`);
-			let emotes = [["simplementednum:822458050161147914", "implemented"], ["sworkingnum:822458050374795295", "working"], ["sconsidernum:822458050111340544", "consider"], ["sdefaultnum2:842488332562071612", "default"], ["snonum:822458049801355315", "no"], [emoji.x, "cancel"]];
+			let emotes = [["simplementednum:1013175340077686904", "implemented"], ["sworkingnum:1013175378308780122", "working"], ["sconsidernum:1013175390757470269", "consider"], ["sdefaultnum2:1013175525889544272", "default"], ["snonum:1013175540192120862", "no"], [emoji.x, "cancel"]];
 			const filter = ({ emoji }, { id }) => emotes.find(em => em[0] === `${emoji.name}:${emoji.id}`) && id === message.author.id;
 
 			for await (let emote of emotes) await m.react(emote[0]);
