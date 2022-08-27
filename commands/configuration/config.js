@@ -973,13 +973,13 @@ module.exports = {
 					let labels = await t.getLabelsForBoard(qServerDB.config.trello.board).catch(() => null);
 					// eslint-disable-next-line no-case-declarations
 					let actionPrepend = {
-						approve: "<:suggester_check:704665656573952040>",
-						deny: "<:suggester_x:704665482828972113>",
-						delete: "<:strash:790937745560305674>",
-						consider: "<:sconsider:822458050111340544>",
-						implemented: "<:simplementednum:822458050161147914>",
-						progress: "<:sworkingnum:822458050374795295>",
-						nothappening: "<:snonum:822458049801355315>",
+						approve: "<:chiru_votopositivo:831701496772427776>",
+						deny: "<:chiru_votonegativo:831701496725766154>",
+						delete: "🗑️",
+						consider: "<:sconsidernum:1013175390757470269>",
+						implemented: "<:simplementednum:1013175340077686904>",
+						progress: "<:sworkingnum:1013175378308780122>",
+						nothappening: "<:snonum:1013175540192120862>",
 						colorchange: "⭐",
 						suggest: "📣"
 					};

@@ -4284,7 +4284,7 @@ module.exports = {
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
 		"COMMAND_EXAMPLES:MARKSTATUS": {
-			string: "`{{p}}mark 1 implemented`\nMarks suggestion #1 as implemented\n\n`{{p}}mark 1 working This will be released soon!`\nMarks suggestion #1 as in progress and adds a comment saying \"This will be released soon!\"\n\n>>> **Status List:**\n<:simplementednum:822458050161147914> Implemented (`implemented`)\n<:sworkingnum:822458050374795295> In Progress (`working`)\n<:sconsider:822458050111340544> In Consideration (`considered`)\n<:sdefault1:842488332562071612> Default (`default`)\n<:snonum:822458049801355315> Not Happening (`no`)",
+			string: "`{{p}}mark 1 implemented`\nMarks suggestion #1 as implemented\n\n`{{p}}mark 1 working This will be released soon!`\nMarks suggestion #1 as in progress and adds a comment saying \"This will be released soon!\"\n\n>>> **Status List:**\n<:simplementednum:1013175340077686904> Implemented (`implemented`)\n<:sworkingnum:1013175378308780122> In Progress (`working`)\n<:sconsidernum:1013175390757470269> In Consideration (`considered`)\n<:sdefault1:842488332562071612> Default (`default`)\n<:snonum:1013175540192120862> Not Happening (`no`)",
 			context: "Examples for the mark command\n" +
 				"**Leave** `{{p}}` **as-is, it is replaced in the help command.**"
 		},
