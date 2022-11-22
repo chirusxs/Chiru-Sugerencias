@@ -15,13 +15,13 @@ module.exports = async (Discord, client) => {
 		callback();
 	}
 
-	// const team = await client.fetchTeam()
-	// 	.catch(() => console.log(chalk`{red [{bold ERROR}] Error fetching team members.}`));
+	const team = await client.fetchTeam()
+		.catch(() => console.log(chalk`{red [{bold ERROR}] Error fetching team members.}`));
 
-	// for (const admin of team) {
-	// 	client.admins.add(admin.id);
-	// 	console.log(chalk`{blue [{bold INFO}] Found {bold ${admin.tag}}}`);
-	// }
+	for (const admin of team) {
+		client.admins.add(admin.id);
+		console.log(chalk`{blue [{bold INFO}] Found {bold ${admin.tag}}}`);
+	}
 
 	coreLog(`🆗 Logged in with ${client.guilds.cache.size} servers! (Shard: ${client.shard.ids[0]})`, client);
 	console.log(chalk`{green [{bold INFO}] Logged in as {bold ${client.user.tag}}! (Release: {bold ${release}, Shard: ${client.shard.ids[0]})}}`);
