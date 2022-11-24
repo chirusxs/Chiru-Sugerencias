@@ -1,5 +1,4 @@
 const { string } = require("../../utils/strings");
-const { slash_url } = require("../other/invite");
 module.exports = {
 	controls: {
 		name: "asuggest",

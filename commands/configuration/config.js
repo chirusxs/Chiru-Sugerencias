@@ -9,7 +9,6 @@ const humanizeDuration = require("humanize-duration");
 const { string, list } = require("../../utils/strings");
 const colorstring = require("color-string");
 const { initTrello, findList, findLabel } = require("../../utils/trello");
-const { slash_url } = require("../other/invite");
 module.exports = {
 	controls: {
 		name: "config",
