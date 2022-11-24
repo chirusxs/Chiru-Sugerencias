@@ -9,12 +9,12 @@ const { pages } = require("../../utils/actions");
 
 module.exports = {
 	controls: {
-		name: "help",
+		name: "ayuda",
 		permission: 10,
-		aliases: ["command", "howto"],
-		usage: "help (command name)",
-		description: "Shows command information",
-		examples: "`{{p}}help`\nShows the list of commands\n\n`{{p}}help suggest`\nShows information about the \"suggest\" command",
+		aliases: ["help"],
+		usage: "ayuda [comando]",
+		description: "Muestra ayuda del bot",
+		examples: "`{{p}}ayuda`\nMuestra la lista de comandos\n\n`{{p}}ayuda sugerencia`\nMuestra el uso del comando \"sugerencia\"",
 		image: "images/Help.gif",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "ATTACH_FILES", "USE_EXTERNAL_EMOJIS", "READ_MESSAGE_HISTORY", "ADD_REACTIONS"],

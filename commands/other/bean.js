@@ -3,10 +3,10 @@ const { fetchUser } = require("../../utils/misc");
 const { dbQuery } = require("../../utils/db");
 module.exports = {
 	controls: {
-		name: "bean",
+		name: "vetar",
 		permission: 10,
-		usage: "bean [user]",
-		description: "Beans a user",
+		usage: "vetar [miembro]",
+		description: "Veta a alguien",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS", "EMBED_LINKS"],
 		cooldown: 60,

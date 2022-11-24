@@ -521,7 +521,7 @@ module.exports = {
 			}
 		},
 		"HELP_MODULE_TITLE": {
-			string: "Module: {{module}}",
+			string: "{{module}}",
 			context: "Title for the module in the help embed",
 			replaced: {
 				module: {
@@ -4479,7 +4479,7 @@ module.exports = {
 			context: "The name of the Suggestions module"
 		},
 		"MODULE_DESC:SUGGESTIONS": {
-			string: "Commands for submitting and interacting with suggestions",
+			string: "Comandos para interactuar con las sugerencias",
 			context: "The description for the Suggestions module"
 		},
 		"UNKNOWN_COMMAND_ERROR": {

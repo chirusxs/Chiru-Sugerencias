@@ -9,13 +9,13 @@ const { initTrello } = require("../../utils/trello");
 
 module.exports = {
 	controls: {
-		name: "edit",
+		name: "editar",
 		permission: 10,
-		aliases: ["change", "revise"],
-		usage: "edit [suggestion id] [new content]",
-		description: "Edits a suggestion",
+		aliases: ["edit"],
+		usage: "editar [id_de_sugerencia] [nuevo_contenido]",
+		description: "Edita una sugerencia",
 		enabled: true,
-		examples: "`{{p}}edit 1234 This is an edit suggestion`\nEdits suggestion #1234 to have the content of \"This is an edit suggestion\"",
+		examples: "`{{p}}editar 56 Agregar nuevas mascotas`\nEdita el contenido de la sugerencia #1234 a \"Agregar nuevas mascotas\"",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 20,
 		docs: "topics/suggestion-editing"

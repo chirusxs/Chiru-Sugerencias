@@ -4,13 +4,13 @@ const { string } = require("../../utils/strings");
 const { checkVotes } = require("../../utils/actions");
 module.exports = {
 	controls: {
-		name: "sinfo",
+		name: "verinfo",
 		permission: 10,
-		usage: "shortinfo [suggestion id]",
-		aliases: ["shortinfo", "sdetails", "si"],
-		description: "Shows information about a suggestion in a concise manner",
+		usage: "verinfo [id]",
+		aliases: [],
+		description: "Muestra la información de una sugerencia",
 		enabled: true,
-		examples: "`{{p}}shortinfo 1`\nShows information about suggestion #1\n\n`{{p}}shortinfo 1 -trim-suggest`\nShows information about suggestion #1 limiting the suggestion content to 250 characters\n\n`{{p}}shortinfo 1 -no-attach`\nShows information about suggestion #1 without showing the added attachment",
+		examples: "`{{p}}verinfo 1`\nMuestra información de la sugerencia #1\n\n`{{p}}verinfo 1 -trim-suggest`\nMuestra 250 caracteres de la información de la sugerencia\n\n`{{p}}verinfo 1 -no-attach`\nMuestra información de una sugerencia sin archivos adjuntos",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
 		docs: "topics/shortinfo"
