@@ -12,7 +12,7 @@ module.exports = {
 		name: "editar",
 		permission: 10,
 		aliases: ["edit"],
-		usage: "editar [id_de_sugerencia] [nuevo_contenido]",
+		usage: "editar [id de sugerencia] [nuevo contenido]",
 		description: "Edita una sugerencia",
 		enabled: true,
 		examples: "`{{p}}editar 56 Agregar nuevas mascotas`\nEdita el contenido de la sugerencia #1234 a \"Agregar nuevas mascotas\"",

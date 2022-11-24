@@ -6,7 +6,7 @@ module.exports = {
 	controls: {
 		name: "prefijo",
 		permission: 10,
-		usage: "prefix",
+		usage: "prefijo",
 		description: "Muestra el prefijo actual del bot",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES"],

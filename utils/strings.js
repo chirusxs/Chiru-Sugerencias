@@ -3958,7 +3958,7 @@ module.exports = {
 				"**Leave** `{{p}}` **as-is, it is replaced in the help command.**"
 		},
 		"COMMAND_DESC:PING": {
-			string: "Checks bot response time and shows information",
+			string: "Revisa el estado actual del bot",
 			context: "Description for the ping command"
 		},
 		"COMMAND_USAGE:PING": {
@@ -4000,7 +4000,7 @@ module.exports = {
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
 		"COMMAND_DESC:SUGGEST": {
-			string: "Submits a suggestion",
+			string: "Crea una sugerencia",
 			context: "Description for the suggest command"
 		},
 		"COMMAND_USAGE:SUGGEST": {
@@ -4009,10 +4009,10 @@ module.exports = {
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
 		"COMMAND_EXAMPLES:SUGGEST": {
-			string: "`{{p}}suggest This is a suggestion`\n" +
-				"Submits a suggestion\n" +
+			string: "`{{p}}sugerencia Agregar un nuevo encantamiento`\n" +
+				"Crea una sugerencia\n" +
 				"\n" +
-				"You can also attach images to your suggestion by uploading an image when you send the command",
+				"Puedes subir una sugerencia con una imagen enviando el comando con una imagen adjunta",
 			context: "Examples for the suggest command\n" +
 				"**Leave** `{{p}}` **as-is, it is replaced in the help command.**"
 		},

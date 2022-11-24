@@ -13,14 +13,14 @@ const { initTrello } = require("../../utils/trello");
 
 module.exports = {
 	controls: {
-		name: "suggest",
+		name: "sugerencia",
 		permission: 10,
-		aliases: ["submit"],
-		usage: "suggest [suggestion]",
-		description: "Submits a suggestion",
+		aliases: ["sugerir"],
+		usage: "sugerencia [tu sugerencia]",
+		description: "Crea una sugerencia",
 		image: "images/Suggest.gif",
 		enabled: true,
-		examples: "`{{p}}suggest This is a suggestion`\nSubmits a suggestion\n\nYou can also attach images to your suggestion by uploading an image when you send the command",
+		examples: "`{{p}}sugerencia Agregar nuevo encantamiento`\nSugiere agregar un nuevo encantamiento\n\nTambién puedes agregar una imagen a tu sugerencia si la adjuntas cuando envias el comando",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 20,
 		docs: "sumup"
