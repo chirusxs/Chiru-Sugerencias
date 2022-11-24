@@ -1,4 +1,3 @@
-const { lists } = require("../commands/other/vote");
 const { string } = require("./strings");
 const { dbModify } = require("./db");
 const { support_invite } = require("../config.json");
