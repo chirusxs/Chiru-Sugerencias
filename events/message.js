@@ -1,7 +1,6 @@
 const { checkPermissions, channelPermissions } = require("../utils/checks");
 const { dbQuery, dbModify } = require("../utils/db");
 const { commandLog, errorLog, commandExecuted } = require("../utils/logs");
-const { protip } = require("../utils/tip");
 const { prefix, log_hooks, support_invite, staff_alert_role } = require("../config.json");
 const { string } = require("../utils/strings");
 const { cleanCommand } = require("../utils/actions");
