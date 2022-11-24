@@ -6,7 +6,7 @@ module.exports = {
 	controls: {
 		name: "verinfo",
 		permission: 10,
-		usage: "verinfo [id]",
+		usage: "verinfo [id de sugerencia]",
 		description: "Muestra la información de una sugerencia",
 		enabled: true,
 		examples: "`{{p}}verinfo 1`\nMuestra información de la sugerencia #1\n\n`{{p}}verinfo 1 -trim-suggest`\nMuestra 250 caracteres de la información de la sugerencia\n\n`{{p}}verinfo 1 -no-attach`\nMuestra información de una sugerencia sin archivos adjuntos",

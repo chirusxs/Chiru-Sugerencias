@@ -8,12 +8,12 @@ const { cleanCommand } = require("../../utils/actions");
 const { initTrello } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "approveedit",
+		name: "verificaredición",
 		permission: 3,
-		aliases: ["acceptedit", "approvedit"],
-		usage: "approveedit [id de sugerencia]",
-		description: "Approves a pending suggestion edit",
-		examples: "`{{p}}approveedit 123`\nApproves a pending edit on suggestion #123",
+		aliases: ["verificaredicion"],
+		usage: "verificaredición [id de sugerencia]",
+		description: "Verifica la edición de una sugerencia",
+		examples: "`{{p}}verificaredición 34`\nVerifica la edición de la sugerencia #34",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,

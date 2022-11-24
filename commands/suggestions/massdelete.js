@@ -11,10 +11,10 @@ module.exports = {
 		name: "meliminar",
 		permission: 3,
 		usage: "meliminar [ids de sugerencias] -r (razón)",
-		description: "Deletes multiple suggestions at once, removing them from the suggestions feed",
+		description: "Elimina múltiples sugerencias a la vez",
 		image: "images/Mdelete.gif",
 		enabled: true,
-		examples: "`{{p}}meliminar 30 35 38`\nElimina las sugerencias #30, #35, y #38\n\n`{{p}}meliminar 30 35 38 -r Sugerencias spam`\nElimina las sugerencias con una razón",
+		examples: "`{{p}}meliminar 30 35 38`\nElimina las sugerencias #30, #35 y #38\n\n`{{p}}meliminar 30 35 38 -r Sugerencias spam`\nElimina las sugerencias con una razón",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 20,
 		docs: "staff/massdelete"

@@ -16,7 +16,7 @@ module.exports = {
 		name: "importar",
 		permission: 2,
 		usage: "importar",
-		description: "Imports suggestions from a channel",
+		description: "Importa las sugerencias de un canal",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS", "ADD_REACTIONS"],
 		cooldown: 60,

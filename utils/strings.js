@@ -4293,7 +4293,7 @@ module.exports = {
 			context: "Description for the massapprove command"
 		},
 		"COMMAND_USAGE:MASSAPPROVE": {
-			string: "massapprove [suggestion ids] -r (comment)",
+			string: "massapprove [ids de sugerencias] -r (comment)",
 			context: "Description for the massapprove command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4311,7 +4311,7 @@ module.exports = {
 			context: "Description for the massdelete command"
 		},
 		"COMMAND_USAGE:MASSDELETE": {
-			string: "massdelete [suggestion ids] -r (reason)",
+			string: "massdelete [ids de sugerencias] -r (reason)",
 			context: "Description for the massdelete command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4329,7 +4329,7 @@ module.exports = {
 			context: "Description for the massdeny command"
 		},
 		"COMMAND_USAGE:MASSDENY": {
-			string: "massdeny [suggestion ids] -r (reason)",
+			string: "massdeny [ids de sugerencias] -r (reason)",
 			context: "Description for the massdeny command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},

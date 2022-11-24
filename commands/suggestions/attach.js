@@ -12,7 +12,7 @@ module.exports = {
 		name: "adjuntar",
 		permission: 3,
 		usage: "adjuntar [id de sugerencia] [enlace]",
-		description: "Attaches a file to an approved suggestion",
+		description: "Adjunta una imagen a una sugerencia",
 		image: "images/Attach.gif",
 		enabled: true,
 		examples: "`{{p}}adjuntar 35 https://i.imgur.com/zmntNve.png`\nAdjunta la imagen https://i.imgur.com/zmntNve.png a la sugerencia #35",

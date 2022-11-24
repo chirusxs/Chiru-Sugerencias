@@ -8,14 +8,13 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "massdeny",
+		name: "mdeclinar",
 		permission: 3,
-		usage: "massdeny [suggestion ids] -r (reason)",
-		aliases: ["mdeny", "multideny", "mreject", "mno"],
-		description: "Denies multiple suggestions at once",
+		usage: "mdeclinar [ids de sugerencias] -r (razón)",
+		description: "Declina múltiples sugerencias a la vez",
 		image: "images/Mdeny.gif",
 		enabled: true,
-		examples: "`{{p}}massdeny 1 2 3`\nDenies suggestions 1, 2, and 3\n\n`{{p}}massdeny 1 2 3 -r This isn't something we're interested in doing`\nDenies suggestions 1, 2, and 3 with a reason of \"This isn't something we're interested in doing\"",
+		examples: "`{{p}}mdeclinar 1 2 3`\nDeclina las sugerencias #1, #2 y #3\n\n`{{p}}mdeclinar 1 2 3 -r Sugerencias spam`\nDeclina múltiples sugerencias con una razón",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 20,
 		docs: "staff/massdeny"

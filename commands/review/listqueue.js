@@ -4,11 +4,11 @@ const { pages } = require("../../utils/actions");
 const { baseConfig } = require("../../utils/checks");
 module.exports = {
 	controls: {
-		name: "listqueue",
+		name: "vercola",
 		permission: 3,
-		aliases: ["queue", "showqueue", "q"],
-		usage: "listqueue",
-		description: "Shows the queue of suggestions awaiting review",
+		aliases: ["cola"],
+		usage: "vercola",
+		description: "Muestra la cola de sugerencias con verificación pendiente",
 		image: "images/Listqueue.gif",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS", "ADD_REACTIONS"],

@@ -7,12 +7,12 @@ const { baseConfig, checkSuggestions, checkReview } = require("../../utils/check
 const { cleanCommand } = require("../../utils/actions");
 module.exports = {
 	controls: {
-		name: "denyedit",
+		name: "declinaredición",
 		permission: 3,
-		aliases: ["rejectedit", "refuseedit", "refusedit"],
-		usage: "denyedit [id de sugerencia]",
-		description: "Denies a pending suggestion edit",
-		examples: "`{{p}}denyedit 1`\nDenies a pending edit on suggestion #123",
+		aliases: ["declinaredicion"],
+		usage: "declinaredición [id de sugerencia]",
+		description: "Declina la edición de una sugerencia",
+		examples: "`{{p}}declinaredición 48`\nDeclina la edición de la sugerencia #48",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,

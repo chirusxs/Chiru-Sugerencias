@@ -8,17 +8,16 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "deny",
+		name: "declinar",
 		permission: 3,
-		usage: "deny [id de sugerencia] (reason)",
-		aliases: ["reject", "refuse", "no"],
-		description: "Denies a suggestion",
+		usage: "declinar [id de sugerencia] (razón)",
+		description: "Declina una sugerencia",
 		image: "images/Deny.gif",
 		enabled: true,
-		examples: "`{{p}}deny 1`\nDenies suggestion #1\n\n`{{p}}deny 1 This isn't something we're interested in`\nDenies suggestion #1 with the reason \"This isn't something we're interested in\"",
+		examples: "`{{p}}declinar 24`\nDeclina la sugerencia #24\n\n`{{p}}declinar 76 Spam`\nDeclina la sugerencia #76 con una razón",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
-		cooldownMessage: "Need to deny multiple suggestions? Try the `mdeny` command!",
+		cooldownMessage: "¿Necesitas declinar múltiples sugerencias a la vez? ¡Usa el comando `mdeclinar`!",
 		docs: "staff/deny"
 	},
 	do: async (locale, message, client, args, Discord, noCommand=false) => {

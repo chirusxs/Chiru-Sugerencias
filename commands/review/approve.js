@@ -8,17 +8,16 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard, trelloComment } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "approve",
+		name: "verificar",
 		permission: 3,
-		aliases: ["accept", "yes"],
-		usage: "approve [id de sugerencia] (comment)",
-		description: "Approves a suggestion",
+		usage: "verificar [id de sugerencia] (comentario)",
+		description: "Verifica una sugerencia",
 		image: "images/Approve.gif",
-		examples: "`{{p}}approve 1`\nApproves suggestion #1\n\n`{{p}}approve 1 This is a comment`\nApproves suggestion #1 and adds a comment from the approver saying \"This is a comment\"",
+		examples: "`{{p}}verificar 1`\nVerifica la sugerencia #35\n\n`{{p}}verificar 12 ¡Tu sugerencia ha sido verificada!`\nAprueba la sugerencia #12 y agrega un comentario",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
-		cooldownMessage: "Need to approve multiple suggestions? Try the `mapprove` command!",
+		cooldownMessage: "¿Necesitas verificar múltiples sugerencias a la vez? ¡Usa el comando `mverificar`!",
 		docs: "staff/approve"
 	},
 	do: async (locale, message, client, args, Discord, noCommand=false) => {

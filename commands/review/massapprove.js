@@ -8,14 +8,13 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard, trelloComment } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "massapprove",
+		name: "mverificar",
 		permission: 3,
-		usage: "massapprove [suggestion ids] -r (comment)",
-		aliases: ["mapprove", "multiapprove", "maccept", "myes"],
-		description: "Approves multiple suggestions at once",
+		usage: "mverificar [ids de sugerencias] -r (comentario)",
+		description: "Verifica múltiples sugerencias a la vez",
 		image: "images/Mapprove.gif",
 		enabled: true,
-		examples: "`{{p}}massapprove 1 2 3`\nApproves suggestions 1, 2, and 3\n\n`{{p}}massapprove 1 2 3 -r Nice suggestion!`\nApproves suggestions 1, 2, and 3 and comments on each of them with \"Nice suggestion!\"",
+		examples: "`{{p}}mverificar 16 19 33`\nVerifica las sugerencias #16, #19 y #33\n\n`{{p}}mverificar 12 25 29 -r ¡Sugerencia verificada!`\nVerifica sugerencias con un comentario",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 20,
 		docs: "staff/massapprove"
