@@ -8,13 +8,12 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "dupe",
+		name: "duplicada",
 		permission: 3,
-		usage: "dupe [duplicate suggestion id] [original suggestion id]",
-		aliases: ["duplicate", "d"],
-		description: "Denies a suggestion as a duplicate of another",
+		usage: "duplicada [id de sugerencia duplicada] [id de sugerencia original]",
+		description: "Declina una sugerencia marcandola como duplicada",
 		enabled: true,
-		examples: "`{{p}}dupe 1 2`\nDenies suggestion #1 as a duplicate of suggestion #2",
+		examples: "`{{p}}duplicada 22 39`\nDeclina y marca la sugerencia #22 como duplicada de la #39",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
 		docs: "staff/dupe"
