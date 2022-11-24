@@ -5,13 +5,12 @@ const { string } = require("../../utils/strings");
 const { cleanCommand } = require("../../utils/actions");
 module.exports = {
 	controls: {
-		name: "follow",
+		name: "seguir",
 		permission: 10,
-		aliases: ["subscribe", "sub"],
-		usage: "follow [suggestion id|list|auto] (on|off|toggle)",
-		description: "Views/edits your following settings",
+		usage: "seguir [id de sugerencia|lista|auto] (si|no|alternar)",
+		description: "Sigue sugerencias y revisa las sugerencias que sigues",
 		enabled: true,
-		examples: "`{{p}}follow 123`\nFollows suggestion #123\n\n`{{p}}follow list`\nLists the suggestions you are following\n\n`{{p}}follow auto on`\nEnables following suggestions when you upvote them\n\n`{{p}}follow auto off`\nDisables following suggestions when you upvote them\n\n`{{p}}follow auto toggle`\nToggles following suggestions when you upvote them",
+		examples: "`{{p}}seguir 35`\nSigue la sugerencia #35\n\n`{{p}}seguir lista`\nMuestra las sugerencias que sigues\n\n`{{p}}seguir auto activar`\nSigue automáticamente las sugerencias que votes positivamente\n\n`{{p}}seguir auto desactivar`\nDeja de seguir sugerencias automáticamente\n\n`{{p}}seguir auto alternar`\nAlterna si sigues sugerencias automáticamente",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS", "EMBED_LINKS"],
 		cooldown: 5,
 		dmAvailable: true,
@@ -48,30 +47,25 @@ module.exports = {
 			pages(locale, message, embeds);
 			return;
 		}
-		case "auto":
-		case "automatic": {
+		case "auto": {
 			if (!args[1]) return message.channel.send(string(locale, qUserDB.auto_subscribe ? "AUTOFOLLOW_ENABLED" : "AUTOFOLLOW_DISABLED")).then(sent => cleanCommand(message, sent, qServerDB));
 			switch (args[1].toLowerCase()) {
-			case "enable":
-			case "on":
-			case "true":
-			case "yes": {
+			case "activar":
+			case "si":
+			case "sí": {
 				if (qUserDB.auto_subscribe) return message.channel.send(string(locale, "AUTOFOLLOW_ALREADY_ENABLED", {}, "error")).then(sent => cleanCommand(message, sent, qServerDB));
 				qUserDB.auto_subscribe = true;
 				await dbModify("User", {id: qUserDB.id}, qUserDB);
 				return message.channel.send(string(locale, "AUTOFOLLOW_ENABLED", {}, "success")).then(sent => cleanCommand(message, sent, qServerDB));
 			}
-			case "disable":
-			case "off":
-			case "false":
+			case "desactivar":
 			case "no": {
 				if (!qUserDB.auto_subscribe) return message.channel.send(string(locale, "AUTOFOLLOW_ALREADY_DISABLED", {}, "error")).then(sent => cleanCommand(message, sent, qServerDB));
 				qUserDB.auto_subscribe = false;
 				await dbModify("User", {id: qUserDB.id}, qUserDB);
 				return message.channel.send(string(locale, "AUTOFOLLOW_DISABLED", {}, "success")).then(sent => cleanCommand(message, sent, qServerDB));
 			}
-			case "toggle":
-			case "switch": {
+			case "alternar": {
 				qUserDB.auto_subscribe = !qUserDB.auto_subscribe;
 				await dbModify("User", {id: qUserDB.id}, qUserDB);
 				return message.channel.send(string(locale, qUserDB.auto_subscribe ? "AUTOFOLLOW_ENABLED" : "AUTOFOLLOW_DISABLED", {}, "success")).then(sent => cleanCommand(message, sent, qServerDB));

@@ -4,13 +4,13 @@ const { string } = require("../../utils/strings");
 const { cleanCommand } = require("../../utils/actions");
 module.exports = {
 	controls: {
-		name: "unfollow",
+		name: "deseguir",
 		permission: 10,
-		aliases: ["unsubscribe", "unsub", "defollow"],
-		usage: "unfollow [suggestion id|auto]",
-		description: "Unfollows a suggestion",
+		aliases: ["unfollow"],
+		usage: "deseguir [id de sugerencia|auto]",
+		description: "Deja de seguir una sugerencia",
 		enabled: true,
-		examples: "`{{p}}unfollow 123`\nUnfollows suggestion #123",
+		examples: "`{{p}}deseguir 35`\nDeja de seguir la sugerencia #123",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
 		docs: "topics/unfollow"

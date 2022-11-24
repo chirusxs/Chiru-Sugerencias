@@ -7,9 +7,9 @@ module.exports = {
 	controls: {
 		name: "ping",
 		permission: 10,
-		aliases: ["hi", "about", "bot"],
+		aliases: ["acercade", "about"],
 		usage: "ping",
-		description: "Checks bot response time and shows information",
+		description: "Revisa el estado del bot",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,

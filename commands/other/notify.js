@@ -3,13 +3,13 @@ const { string } = require("../../utils/strings");
 const { cleanCommand } = require("../../utils/actions");
 module.exports = {
 	controls: {
-		name: "notify",
+		name: "notificaciones",
 		permission: 10,
-		aliases: ["notifications"],
-		usage: "notify (on|off|toggle)",
-		description: "Views/edits your notification settings",
+		aliases: ["notificar"],
+		usage: "notificaciones (si|no|alternar)",
+		description: "Revisa tus ajustes de notificaciones",
 		enabled: true,
-		examples: "`{{p}}notify`\nShows your DM notification setting\n\n`{{p}}notify on`\nEnables DM notifications for suggestion changes\n\n`{{p}}notify off`\nDisables DM notifications for suggestion changes\n\n`{{p}}notify toggle`\nToggles DM notifications for suggestion changes",
+		examples: "`{{p}}notificaciones`\nMuestra tus ajustes de notificaciones\n\n`{{p}}notificaciones sí`\nActiva las notificaciones para tus sugerencias\n\n`{{p}}notificaciones no`\nDesactiva las notificaciones\n\n`{{p}}notificaciones alternar`\nAlterna las notificaciones",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
 		dmAvailable: true,
@@ -20,26 +20,22 @@ module.exports = {
 		let qUserDB = await dbQuery("User", { id: message.author.id });
 		if (!args[0]) return message.channel.send(string(locale, qUserDB.notify ? "NOTIFICATIONS_ENABLED" : "NOTIFICATIONS_DISABLED")).then(sent => cleanCommand(message, sent, qServerDB));
 		switch (args[0].toLowerCase()) {
-		case "enable":
-		case "on":
-		case "true":
-		case "yes": {
+		case "activar":
+		case "sí":
+		case "si": {
 			if (qUserDB.notify) return message.channel.send(string(locale, "NOTIFICATIONS_ALREADY_ENABLED", {}, "error")).then(sent => cleanCommand(message, sent, qServerDB));
 			qUserDB.notify = true;
 			await dbModify("User", {id: qUserDB.id}, qUserDB);
 			return message.channel.send(string(locale, "NOTIFICATIONS_ENABLED", {}, "success")).then(sent => cleanCommand(message, sent, qServerDB));
 		}
-		case "disable":
-		case "off":
-		case "false":
+		case "desactivar":
 		case "no": {
 			if (!qUserDB.notify) return message.channel.send(string(locale, "NOTIFICATIONS_ALREADY_DISABLED", {}, "error")).then(sent => cleanCommand(message, sent, qServerDB));
 			qUserDB.notify = false;
 			await dbModify("User", {id: qUserDB.id}, qUserDB);
 			return message.channel.send(string(locale, "NOTIFICATIONS_DISABLED", {}, "success")).then(sent => cleanCommand(message, sent, qServerDB));
 		}
-		case "toggle":
-		case "switch": {
+		case "alternar": {
 			qUserDB.notify = !qUserDB.notify;
 			await dbModify("User", {id: qUserDB.id}, qUserDB);
 			return message.channel.send(string(locale, qUserDB.notify ? "NOTIFICATIONS_ENABLED" : "NOTIFICATIONS_DISABLED", {}, "success")).then(sent => cleanCommand(message, sent, qServerDB));

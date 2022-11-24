@@ -4,10 +4,10 @@ const { prefix } = require("../../config");
 const { dbQuery } = require("../../utils/db");
 module.exports = {
 	controls: {
-		name: "prefix",
+		name: "prefijo",
 		permission: 10,
 		usage: "prefix",
-		description: "Shows the bot's prefix on this server",
+		description: "Muestra el prefijo actual del bot",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES"],
 		cooldown: 5,

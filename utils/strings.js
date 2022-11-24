@@ -479,7 +479,7 @@ module.exports = {
 			context: "Title for the Server Flags field of the configuration list"
 		},
 		"PAGINATION_NAVIGATION_INSTRUCTIONS": {
-			string: "Use the arrow reactions to navigate pages, and the ⏹ reaction to close the embed",
+			string: "¡Usa las flechas para navegar entre páginas!",
 			context: "Included in pagination embeds to give instructions on how to navigate pages"
 		},
 		"PAGINATION_PAGE_COUNT": {
@@ -531,7 +531,7 @@ module.exports = {
 			}
 		},
 		"HELP_UNDERSTANDING": {
-			string: "Use `{{prefix}}help [command]` to view more information about a specific command, including usage examples.\nRequired arguments are surrounded by `[brackets]`, optional arguments are surrounded by `(parenthesis)`",
+			string: "Usa `{{prefix}}ayuda [comando]` para ver más información de un comando.\nLos argumentos pueden ser `[requeridos]` u `(opcionales)`",
 			context: "Information in help that helps with understanding the format",
 			replaced: {
 				prefix: {
@@ -563,7 +563,7 @@ module.exports = {
 			context: "Documentation field name in help command"
 		},
 		"HELP_ADDITIONAL_INFO": {
-			string: "Additional Information",
+			string: "Información adicional",
 			context: "Additional Information field name in help command"
 		},
 		"HELP_ALIAS": {
@@ -3265,11 +3265,11 @@ module.exports = {
 			context: "Error shown when a command is not available in DMs"
 		},
 		"HELP_USEFUL_LINKS": {
-			string: "Useful Links",
+			string: "Enlaces útiles",
 			context: "Header for the useful links section of the help embed"
 		},
 		"HELP_USEFUL_LINKS_DESC_NEW": {
-			string: "[Join our Support Server](https://discord.gg/{{support_invite}})\n[Documentation](https://suggester.js.org/)\n[Invite Me]({{bot_invite}})\n[Support Suggester](https://suggester.js.org/#/supporting/info)\n[Privacy Policy](https://suggester.js.org/#/legal)",
+			string: "Puedes abrir un ticket en <#832033137742708737>\n[Repositorio para desarrolladores](https://github.com/chirusxs/Chiru-Sugerencias)",
 			context: "Shows useful links on the help command",
 			replaced: {
 				support_invite: {
