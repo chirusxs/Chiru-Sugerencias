@@ -40,8 +40,7 @@ module.exports = {
 					.setTitle(string(locale, "HELP_MODULE_TITLE", { module: string(locale, `MODULE_NAME:${(require(`../${module}/module`)).name.toUpperCase()}`) || (require(`../${module}/module`)).name }))
 					.setColor(client.colors.default)
 					.setDescription((string(locale, `MODULE_DESC:${(require(`../${module}/module`)).name.toUpperCase()}`) || (require(`../${module}/module`)).description) + "\n\n" + moduleCommands.map(c => `\`${serverPrefix}${string(locale, `COMMAND_USAGE:${c.controls.name.toUpperCase()}`) || c.controls.usage}\` - ${string(locale, `COMMAND_DESC:${c.controls.name.toUpperCase()}`) || c.controls.description}`).join("\n"))
-					.addField(string(locale, "HELP_ADDITIONAL_INFO"), string(locale, "HELP_UNDERSTANDING", { prefix: serverPrefix }))
-					.addField(string(locale, "HELP_USEFUL_LINKS"), string(locale, "HELP_USEFUL_LINKS_DESC_NEW", { support_invite })));
+					.addField(string(locale, "HELP_ADDITIONAL_INFO"), string(locale, "HELP_UNDERSTANDING", { prefix: serverPrefix })));
 			}
 			if (embeds.length > 1) for await (let e of embeds) e.setFooter(string(locale, "PAGINATION_NAVIGATION_INSTRUCTIONS"));
 			return pages(locale, message, embeds);

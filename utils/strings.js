@@ -483,7 +483,7 @@ module.exports = {
 			context: "Included in pagination embeds to give instructions on how to navigate pages"
 		},
 		"PAGINATION_PAGE_COUNT": {
-			string: "Page {{current}}/{{total}}",
+			string: "Página {{current}}/{{total}}",
 			context: "Included in pagination embeds to show the number of pages and the current page",
 			replaced: {
 				current: {
@@ -511,7 +511,7 @@ module.exports = {
 			}
 		},
 		"HELP_AUTHOR": {
-			string: "{{name}} Help",
+			string: "Chiru Sugerencias - Ayuda",
 			context: "Author title for the help embed",
 			replaced: {
 				name: {
@@ -4466,7 +4466,7 @@ module.exports = {
 		},
 		"MODULE_NAME:OTHER": { string: "Other", context: "The name of the Other module" },
 		"MODULE_DESC:OTHER": {
-			string: "Miscellaneous commands",
+			string: "Comando miscelaneos",
 			context: "The description for the Other module"
 		},
 		"MODULE_NAME:REVIEW": { string: "Review", context: "The name of the Review module" },
