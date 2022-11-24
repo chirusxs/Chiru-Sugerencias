@@ -3,7 +3,6 @@ const { dbQuery } = require("../../utils/db");
 const { checkPermissions } = require("../../utils/checks");
 const { MessageAttachment } = require("discord.js");
 const { prefix, support_invite } = require("../../config.json");
-const { slash_url } = require("./invite");
 const { string } = require("../../utils/strings");
 const { pages } = require("../../utils/actions");
 
