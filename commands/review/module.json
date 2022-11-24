@@ -1,5 +1,5 @@
 {
-  "name": "Review",
-  "description": "Commands for reviewing suggestions (only available when the bot is in the `review` mode)",
+  "name": "Revisión",
+  "description": "Comandos para la revisión de sugerencias (solo disponible cuando el bot está en modo `revisión`)",
   "position": 2
 }

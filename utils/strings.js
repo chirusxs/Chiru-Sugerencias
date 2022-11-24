@@ -4469,9 +4469,9 @@ module.exports = {
 			string: "Comando miscelaneos",
 			context: "The description for the Other module"
 		},
-		"MODULE_NAME:REVIEW": { string: "Review", context: "The name of the Review module" },
+		"MODULE_NAME:REVIEW": { string: "Revisión", context: "The name of the Review module" },
 		"MODULE_DESC:REVIEW": {
-			string: "Commands for reviewing suggestions (only available when the bot is in the `review` mode)",
+			string: "Comandos para la revisión de sugerencias (solo disponible cuando el bot está en modo `revisión`)",
 			context: "The description for the Review module"
 		},
 		"MODULE_NAME:SUGGESTIONS": {
