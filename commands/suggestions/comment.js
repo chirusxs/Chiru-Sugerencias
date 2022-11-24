@@ -8,13 +8,13 @@ const { cleanCommand } = require("../../utils/actions");
 const { trelloComment } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "comment",
+		name: "comentar",
 		permission: 3,
-		usage: "comment [suggestion id] [comment]",
-		description: "Adds a comment to an approved suggestion",
+		usage: "comentar [id de sugerencia] [comentario]",
+		description: "Agrega un comentario a una sugerencia",
 		image: "images/Comment.gif",
 		enabled: true,
-		examples: "`{{p}}comment 1 This is a comment`\nComments on suggestion #1 with \"This is a comment\"",
+		examples: "`{{p}}comentar 35 ¡Me parece genial!`\nComenta la sugerencia #35",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 10,
 		docs: "staff/comment"

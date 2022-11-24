@@ -11,7 +11,7 @@ module.exports = {
 		name: "approveedit",
 		permission: 3,
 		aliases: ["acceptedit", "approvedit"],
-		usage: "approveedit [suggestion id]",
+		usage: "approveedit [id de sugerencia]",
 		description: "Approves a pending suggestion edit",
 		examples: "`{{p}}approveedit 123`\nApproves a pending edit on suggestion #123",
 		enabled: true,

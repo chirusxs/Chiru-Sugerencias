@@ -9,12 +9,11 @@ function timeout(ms) {
 }
 module.exports = {
 	controls: {
-		name: "down",
+		name: "peorvotadas",
 		permission: 3,
-		aliases: ["downvoted", "worst", "lowest"],
-		usage: "down (time)",
-		description: "Shows the top 10 lowest voted suggestions",
-		examples: "`{{p}}down`\nShows the top 10 lowest voted suggestions\n\n`{{p}}down 1w`\nShows the top 10 lowest voted suggestions from the last week",
+		usage: "peorvotadas (tiempo)",
+		description: "Muestra las sugerencias con más votos negativos",
+		examples: "`{{p}}peorvotadas`\nMuestra las 10 sugerencias con más votos negativos\n\n`{{p}}peorvotadas 1w`\nMuestra las 10 sugerencias con más votos negativos de la última semana",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 60,

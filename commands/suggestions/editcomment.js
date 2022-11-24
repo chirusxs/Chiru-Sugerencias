@@ -8,13 +8,12 @@ const { cleanCommand } = require("../../utils/actions");
 const { initTrello } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "editcomment",
+		name: "editarcomentario",
 		permission: 3,
-		aliases: ["ecomment", "revisecomment", "ec"],
-		usage: "editcomment [comment id] [new content]",
-		description: "Edits a comment on a suggestion",
+		usage: "editarcomentario [id de comentario] [nuevo contenido]",
+		description: "Edita un comentario",
 		enabled: true,
-		examples: "`{{p}}editcomment 27_1 This is new content`\nEdits a comment with the ID `27_1` to read \"This is new content\"",
+		examples: "`{{p}}editarcomentario 27_1 ¡No me parece tan bien!`\nEdita el comentario `27_1`",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 10,
 		docs: "topics/comment-editing"

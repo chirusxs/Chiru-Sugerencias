@@ -10,12 +10,11 @@ function timeout(ms) {
 
 module.exports = {
 	controls: {
-		name: "topvoted",
+		name: "top",
 		permission: 3,
-		aliases: ["top", "best", "upvoted", "upvotes"],
-		usage: "top (time)",
-		description: "Shows the top 10 most highly voted suggestions",
-		examples: "`{{p}}top`\nShows the top 10 suggestions\n\n`{{p}}top 1w`\nShows the top 10 suggestions from the last week",
+		usage: "top (tiempo)",
+		description: "Muestra las sugerencias con más votos positivos",
+		examples: "`{{p}}top`\nMuestra las 10 sugerencias con más votos positivios\n\n`{{p}}top 1w`\nMuestra las 10 sugerencias con más votos positivos de la última semana",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 60,

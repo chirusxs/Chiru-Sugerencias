@@ -11,7 +11,7 @@ module.exports = {
 		name: "approve",
 		permission: 3,
 		aliases: ["accept", "yes"],
-		usage: "approve [suggestion id] (comment)",
+		usage: "approve [id de sugerencia] (comment)",
 		description: "Approves a suggestion",
 		image: "images/Approve.gif",
 		examples: "`{{p}}approve 1`\nApproves suggestion #1\n\n`{{p}}approve 1 This is a comment`\nApproves suggestion #1 and adds a comment from the approver saying \"This is a comment\"",

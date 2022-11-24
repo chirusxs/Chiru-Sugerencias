@@ -9,7 +9,7 @@ module.exports = {
 	controls: {
 		name: "silentdeny",
 		permission: 3,
-		usage: "silentdeny [suggestion id] (reason)",
+		usage: "silentdeny [id de sugerencia] (reason)",
 		aliases: ["silentrefuse", "silentreject", "silentno", "sdeny", "srefuse", "sreject", "sno"],
 		description: "Denies a suggestion without posting it to the denied suggestions feed or DMing the suggesting user",
 		enabled: true,

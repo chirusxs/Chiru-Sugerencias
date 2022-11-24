@@ -4,14 +4,13 @@ const { string } = require("../../utils/strings");
 const { checkVotes } = require("../../utils/actions");
 module.exports = {
 	controls: {
-		name: "info",
+		name: "ainfo",
 		permission: 3,
-		usage: "info [suggestion id]",
-		aliases: ["details", "suggestion"],
-		description: "Shows information about a suggestion",
+		usage: "ainfo [id de sugerencia]",
+		description: "Muestra información administrativa de una sugerencia",
 		image: "images/Info.gif",
 		enabled: true,
-		examples: "`{{p}}info 1`\nShows information about suggestion #1",
+		examples: "`{{p}}ainfo 35`\nMuestra información administrativa de la sugerencia #35",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
 		docs: "staff/info"

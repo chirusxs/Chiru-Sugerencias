@@ -5,13 +5,12 @@ const { pages } = require("../../utils/actions");
 const timestring = require("timestring");
 module.exports = {
 	controls: {
-		name: "search",
+		name: "buscar",
 		permission: 3,
-		usage: "search [query]",
-		aliases: ["lookup", "query"],
-		description: "Searches suggestions on this server",
+		usage: "buscar [término de búsqueda]",
+		description: "Busca una sugerencia del servidor",
 		enabled: true,
-		examples: "`{{p}}search status:approved author:327887845270487041`\nSearches for approved suggestions created by user 327887845270487041\n\n`{{p}}search mark:\"in progress\" staff:702180584503508994`\nSearches for suggestions marked as \"In Progress\" that were approved by user 702180584503508994\n\n`{{p}}search votes>10 time>\"1 month\" content!\"test\"`\nSearches for suggestions with more than 10 votes, more than a month old, and with a content not including \"test\"",
+		examples: "`{{p}}buscar verificacion:verificada autor:851072040189427722`\nBusca sugerencias verificadas creadas por 851072040189427722\n\n`{{p}}buscar estado:\"en progreso\" staff:851072040189427722`\nBusca sugerencias \"En Progreso\" verificadas por 851072040189427722\n\n`{{p}}buscar votos>10 tiempo>\"1 month\" contenido!\"test\"`\nBusca con más de 10 votos, con antigüedad de más de un mes, y sin tener en cuenta el contenido \"test\"",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
 		docs: "topics/search"
@@ -42,29 +41,26 @@ module.exports = {
 			return input.match(/['"“”‘’„”«»]?([\s\S]+)['"“”‘’„”«»]/) ? input.match(/['"“”‘’„”«»]?([\s\S]+)['"“”‘’„”«»]/)[1] : input;
 		}
 
-		let qString = args.join(" ").match(/(status|mark|votes|author|staff|time|content)(>|<|!|:)("[^"]+"|[\S]+)/g);
+		let qString = args.join(" ").match(/(verificacion|estado|votos|autor|staff|tiempo|contenido)(>|<|!|:)("[^"]+"|[\S]+)/g);
 		if (!qString || !qString.length) return message.channel.send(string(locale, "SEARCH_BAD_QUERY_ERROR", {}, "error"));
 		let m = await message.channel.send(string(locale, "SUGGESTION_LOADING"));
 		let query = { id: message.guild.id };
 		let voteQuery = [];
 		let timeQuery = [];
 		for (let q of qString) {
-			q = q.match(/(status|mark|votes|author|staff|time|content)(>|<|!|:)("[^"]+"|[\S]+)/);
+			q = q.match(/(verificacion|estado|votos|autor|staff|tiempo|contenido)(>|<|!|:)("[^"]+"|[\S]+)/);
 			switch (q[1].toLowerCase()) {
-			case "status":
+			case "verificacion":
 				// eslint-disable-next-line no-case-declarations
 				let status;
 				switch (handleQuoteInput(q[3])) {
-				case "approved":
+				case "verificada":
 					status = "approved";
 					break;
-				case "denied":
-				case "deleted":
+				case "declinada":
 					status = "denied";
 					break;
-				case "awaiting_review":
-				case "review":
-				case "awaiting review":
+				case "sin_verificar":
 					status = "awaiting_review";
 					break;
 				}
@@ -74,53 +70,48 @@ module.exports = {
 				// eslint-disable-next-line no-case-declarations
 				let mark;
 				switch (handleQuoteInput(q[3])) {
-				case "implemented":
-				case "done":
+				case "implementada":
 					mark = "implemented";
 					break;
-				case "working":
-				case "progress":
-				case "inprogress":
-				case "in progress":
+				case "en progreso":
+				case "progreso":
 					mark = "working";
 					break;
-				case "consideration":
-				case "consider":
-				case "considered":
-				case "inconsideration":
-				case "in consideration":
+				case "considerando":
+				case "consideración":
+				case "consideracion":
+				case "en consideración":
+				case "en consideracion":
 					mark = "consideration";
 					break;
 				case "no":
-				case "not":
-				case "nothappening":
-				case "not happening":
+				case "no sucedera":
+				case "no sucederá":
 					mark = "no";
 					break;
-				case "none":
-				case "reset":
+				case "por defecto":
 				case "default":
 					mark = null;
 				}
 				query["displayStatus"] = q[2] !== "!" ? mark : { $ne: mark };
 				break;
-			case "votes":
+			case "votos":
 				// eslint-disable-next-line no-case-declarations
 				let votes = parseInt(handleQuoteInput(q[3]));
 				if (votes || votes === 0) voteQuery = [q[2], votes];
 				break;
-			case "author":
+			case "autor":
 				query["suggester"] = q[2] !== "!" ? handleQuoteInput(q[3]) : { $ne: handleQuoteInput(q[3]) };
 				break;
 			case "staff":
 				query["staff_member"] = q[2] !== "!" ? handleQuoteInput(q[3]) : { $ne: handleQuoteInput(q[3]) };
 				break;
-			case "time":
+			case "tiempo":
 				// eslint-disable-next-line no-case-declarations
 				let time = (handleQuoteInput(q[3]) ? timestring(handleQuoteInput(q[3]), "ms") : null) || null;
 				if (time) timeQuery = [q[2], time];
 				break;
-			case "content":
+			case "contenido":
 				query["suggestion"] = q[2] !== "!" ? { "$regex": escapeRegExp(handleQuoteInput(q[3])) } : { $not: { "$regex": escapeRegExp(handleQuoteInput(q[3])) } };
 				break;
 			}

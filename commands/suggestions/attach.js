@@ -9,13 +9,13 @@ const { initTrello } = require("../../utils/trello");
 const { emoji } = require("../../config");
 module.exports = {
 	controls: {
-		name: "attach",
+		name: "adjuntar",
 		permission: 3,
-		usage: "attach [suggestion id] [attachment link]",
+		usage: "adjuntar [id de sugerencia] [enlace]",
 		description: "Attaches a file to an approved suggestion",
 		image: "images/Attach.gif",
 		enabled: true,
-		examples: "`{{p}}attach 1 https://i.imgur.com/zmntNve.png`\nAttaches https://i.imgur.com/zmntNve.png to suggestion #1\n\n`{{p}}attach 1`\nIf you attach an image via Discord's native uploader, it will be added to suggestion #1",
+		examples: "`{{p}}adjuntar 35 https://i.imgur.com/zmntNve.png`\nAdjunta la imagen https://i.imgur.com/zmntNve.png a la sugerencia #35",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS", "ATTACH_FILES"],
 		cooldown: 5,
 		docs: "staff/attach"

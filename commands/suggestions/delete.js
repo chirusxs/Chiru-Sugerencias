@@ -8,15 +8,15 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "delete",
+		name: "eliminar",
 		permission: 3,
-		usage: "delete [suggestion id] (reason)",
-		description: "Deletes a suggestion, removing it from the suggestions feed",
+		usage: "eliminar [id de sugerencia] (razón)",
+		description: "Elimina una sugerencia",
 		enabled: true,
-		examples: "`{{p}}delete 1`\nDeletes suggestion #1\n\n`{{p}}delete 1 This has already been suggested`\nDeletes suggestion #1 with the reason \"This has already been suggested\"",
+		examples: "`{{p}}eliminar 35`\nElimina la sugerencia #35\n\n`{{p}}eliminar 35 Contenido NSFW en la sugerencia`",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
-		cooldownMessage: "Need to delete multiple suggestions? Try the `mdelete` command!",
+		cooldownMessage: "¿Necesitas eliminar múltiples sugerencias? ¡Utiliza el comando `meliminar`!",
 		docs: "staff/delete"
 	},
 	do: async (locale, message, client, args, Discord) => {

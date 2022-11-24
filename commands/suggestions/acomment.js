@@ -8,12 +8,11 @@ const { cleanCommand } = require("../../utils/actions");
 const { trelloComment } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "acomment",
+		name: "acomentar",
 		permission: 3,
-		aliases: ["anonymouscomment"],
-		usage: "acomment [suggestion id] [comment]",
-		description: "Adds a comment to an approved suggestion anonymously",
-		examples: "`{{p}}acomment 1 This is a comment`\nAnonymously comments on suggestion #1 with \"This is a comment\"",
+		usage: "acomentar [id de sugerencia] [comentario]",
+		description: "Agrega un comentario a una sugerencia de manera anónima",
+		examples: "`{{p}}acomentar 1 Este comentario es anónimo`\nComenta de manera anónima la sugerencia #1",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 10,

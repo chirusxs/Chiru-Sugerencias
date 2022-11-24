@@ -9,13 +9,12 @@ const { initTrello } = require("../../utils/trello");
 const { emoji } = require("../../config");
 module.exports = {
 	controls: {
-		name: "removeattachment",
+		name: "eliminaradjunto",
 		permission: 3,
-		aliases: ["rmattachment", "rmattach", "delattachment", "deleteattachment"],
-		usage: "removeattachment [suggestion id]",
-		description: "Removes an attachment from a suggestion",
+		usage: "eliminaradjunto [id de sugerencia]",
+		description: "Elimina una imagen adjunta de una sugerencia",
 		enabled: true,
-		examples: "`{{p}}removeattachment 1`\nRemoves the attachment from suggestion #1",
+		examples: "`{{p}}eliminaradjunto 35`\nElimina el archivo adjunto de la sugerencia #35",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "ATTACH_FILES", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 10,
 		docs: "staff/removeattachment"

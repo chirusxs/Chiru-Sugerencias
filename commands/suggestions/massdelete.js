@@ -8,14 +8,13 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "massdelete",
+		name: "meliminar",
 		permission: 3,
-		usage: "massdelete [suggestion ids] -r (reason)",
-		aliases: ["mdelete", "multidelete"],
+		usage: "meliminar [ids de sugerencias] -r (razón)",
 		description: "Deletes multiple suggestions at once, removing them from the suggestions feed",
 		image: "images/Mdelete.gif",
 		enabled: true,
-		examples: "`{{p}}massdelete 1 2 3`\nDeletes suggestions 1, 2, and 3\n\n`{{p}}massdelete 1 2 3 -r Cleaning up suggestions`\nDeletes suggestions 1, 2, and 3 with a reason of \"Cleaning up suggestions\"",
+		examples: "`{{p}}meliminar 30 35 38`\nElimina las sugerencias #30, #35, y #38\n\n`{{p}}meliminar 30 35 38 -r Sugerencias spam`\nElimina las sugerencias con una razón",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 20,
 		docs: "staff/massdelete"

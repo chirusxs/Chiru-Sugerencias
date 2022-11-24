@@ -10,7 +10,7 @@ module.exports = {
 		name: "denyedit",
 		permission: 3,
 		aliases: ["rejectedit", "refuseedit", "refusedit"],
-		usage: "denyedit [suggestion id]",
+		usage: "denyedit [id de sugerencia]",
 		description: "Denies a pending suggestion edit",
 		examples: "`{{p}}denyedit 1`\nDenies a pending edit on suggestion #123",
 		enabled: true,

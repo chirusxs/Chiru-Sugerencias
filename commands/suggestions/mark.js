@@ -8,14 +8,13 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard, trelloComment } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "markstatus",
+		name: "estado",
 		permission: 3,
-		aliases: ["mark", "status"],
-		usage: "mark [suggestion id] [status] (comment)",
-		description: "Marks a status on a suggestion",
+		usage: "estado [id de sugerencia] [estado] (comentario)",
+		description: "Cambia el estado de una sugerencia",
 		image: "images/Mark.gif",
 		enabled: true,
-		examples: "`{{p}}mark 1 implemented`\nMarks suggestion #1 as implemented\n\n`{{p}}mark 1 working This will be released soon!`\nMarks suggestion #1 as in progress and adds a comment saying \"This will be released soon!\"\n\n>>> **Status List:**\n<:simplementednum:1013175340077686904> Implemented (`implemented`)\n<:sworkingnum:1013175378308780122> In Progress (`working`)\n<:sconsidernum:1013175390757470269> In Consideration (`considered`)\n<:sdefault1:842488332562071612> Default (`default`)\n<:snonum:1013175540192120862> Not Happening (`no`)",
+		examples: "`{{p}}marcar 35 implementada`\nMarks suggestion #1 as implemented\n\n`{{p}}mark 1 working This will be released soon!`\nMarks suggestion #1 as in progress and adds a comment saying \"This will be released soon!\"\n\n>>> **Status List:**\n<:simplementednum:1013175340077686904> Implemented (`implemented`)\n<:sworkingnum:1013175378308780122> In Progress (`working`)\n<:sconsidernum:1013175390757470269> In Consideration (`considered`)\n<:sdefault1:842488332562071612> Default (`default`)\n<:snonum:1013175540192120862> Not Happening (`no`)",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS", "ADD_REACTIONS", "MANAGE_MESSAGES"],
 		cooldown: 10,
 		docs: "staff/mark"
@@ -27,24 +26,23 @@ module.exports = {
 
 		function status (input) {
 			switch (input ? input.toLowerCase() : "") {
-			case "implemented":
-			case "done":
+			case "implementada":
 				return [["implemented"], string(locale, "STATUS_IMPLEMENTED"), string(guildLocale, "STATUS_IMPLEMENTED"), client.colors.green];
-			case "working":
-			case "progress":
-			case "inprogress":
+			case "enprogreso":
 				return [["working"], string(locale, "STATUS_PROGRESS"), string(guildLocale, "STATUS_PROGRESS"), client.colors.orange];
-			case "consideration":
-			case "consider":
-			case "considered":
-			case "inconsideration":
+			case "enconsideracion":
+			case "enconsideración":
+			case "considerando":
+			case "consideracion":
+			case "consideración":
 				return [["consideration"], string(locale, "STATUS_CONSIDERATION"), string(guildLocale, "STATUS_CONSIDERATION"), client.colors.teal];
 			case "no":
-			case "not":
+			case "nosucedera":
+			case "nosucederá":
 				return [["no"], string(locale, "STATUS_NO"), string(guildLocale, "STATUS_NO"), client.colors.gray];
 			case "default":
-			case "none":
-			case "reset":
+			case "pordefecto":
+			case "reiniciar":
 				return [[null, "default"], string(locale, "STATUS_DEFAULT"), string(guildLocale, "STATUS_DEFAULT"), client.colors.default];
 			default:
 				return [null];

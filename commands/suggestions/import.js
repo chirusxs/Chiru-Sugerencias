@@ -13,9 +13,9 @@ function timeout(ms) {
 
 module.exports = {
 	controls: {
-		name: "import",
+		name: "importar",
 		permission: 2,
-		usage: "import",
+		usage: "importar",
 		description: "Imports suggestions from a channel",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS", "ADD_REACTIONS"],

@@ -8,16 +8,15 @@ const { cleanCommand } = require("../../utils/actions");
 const { actCard } = require("../../utils/trello");
 module.exports = {
 	controls: {
-		name: "silentdelete",
+		name: "seliminar",
 		permission: 3,
-		usage: "silentdelete [suggestion id] (reason)",
-		aliases: ["sdelete"],
-		description: "Deletes a suggestion without posting it to the denied suggestions feed or DMing the suggesting user",
+		usage: "seliminar [id de sugerencia] (razón)",
+		description: "Elimina una sugerencia silenciosamente sin avisarle al/a la autor(a)",
 		enabled: true,
-		examples: "`{{p}}silentdelete 1`\nSilently deletes suggestion #1\n\n`{{p}}silentdelete 1 This has already been suggested`\nSilently deletes suggestion #1 with the reason \"This has already been suggested\"",
+		examples: "`{{p}}seliminar 35`\nElimina silenciosamente la sugerencia #35\n\n`{{p}}seliminar 35 Sugerencia ignorada`\nElimina silenciosamente con una razón",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
-		cooldownMessage: "Need to delete multiple suggestions? Try the `mdelete` command!",
+		cooldownMessage: "¿Necesitas eliminar múltiples sugerencias? ¡Usa el comando `meliminar`!",
 		docs: "staff/silentdelete"
 	},
 	do: async (locale, message, client, args, Discord) => {

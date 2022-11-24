@@ -4112,7 +4112,7 @@ module.exports = {
 			context: "Description for the acomment command"
 		},
 		"COMMAND_USAGE:ACOMMENT": {
-			string: "acomment [suggestion id] [comment]",
+			string: "acomment [id de sugerencia] [comment]",
 			context: "Description for the acomment command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4127,7 +4127,7 @@ module.exports = {
 			context: "Description for the approve command"
 		},
 		"COMMAND_USAGE:APPROVE": {
-			string: "approve [suggestion id] (comment)",
+			string: "approve [id de sugerencia] (comment)",
 			context: "Description for the approve command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4145,7 +4145,7 @@ module.exports = {
 			context: "Description for the attach command"
 		},
 		"COMMAND_USAGE:ATTACH": {
-			string: "attach [suggestion id] [attachment link]",
+			string: "attach [id de sugerencia] [attachment link]",
 			context: "Description for the attach command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4177,7 +4177,7 @@ module.exports = {
 			context: "Description for the comment command"
 		},
 		"COMMAND_USAGE:COMMENT": {
-			string: "comment [suggestion id] [comment]",
+			string: "comment [id de sugerencia] [comment]",
 			context: "Description for the comment command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4192,7 +4192,7 @@ module.exports = {
 			context: "Description for the delete command"
 		},
 		"COMMAND_USAGE:DELETE": {
-			string: "delete [suggestion id] (reason)",
+			string: "delete [id de sugerencia] (reason)",
 			context: "Description for the delete command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4224,7 +4224,7 @@ module.exports = {
 			context: "Description for the deny command"
 		},
 		"COMMAND_USAGE:DENY": {
-			string: "deny [suggestion id] (reason)",
+			string: "deny [id de sugerencia] (reason)",
 			context: "Description for the deny command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4256,7 +4256,7 @@ module.exports = {
 			context: "Description for the info command"
 		},
 		"COMMAND_USAGE:INFO": {
-			string: "info [suggestion id]",
+			string: "info [id de sugerencia]",
 			context: "Description for the info command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4279,7 +4279,7 @@ module.exports = {
 			context: "Description for the mark command"
 		},
 		"COMMAND_USAGE:MARKSTATUS": {
-			string: "mark [suggestion id] [status] (comment)",
+			string: "mark [id de sugerencia] [status] (comment)",
 			context: "Description for the mark command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4347,7 +4347,7 @@ module.exports = {
 			context: "Description for the removeattachment command"
 		},
 		"COMMAND_USAGE:REMOVEATTACHMENT": {
-			string: "removeattachment [suggestion id]",
+			string: "removeattachment [id de sugerencia]",
 			context: "Description for the removeattachment command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4361,7 +4361,7 @@ module.exports = {
 			context: "Description for the silentdelete command"
 		},
 		"COMMAND_USAGE:SILENTDELETE": {
-			string: "silentdelete [suggestion id] (reason)",
+			string: "silentdelete [id de sugerencia] (reason)",
 			context: "Description for the silentdelete command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4379,7 +4379,7 @@ module.exports = {
 			context: "Description for the silentdeny command"
 		},
 		"COMMAND_USAGE:SILENTDENY": {
-			string: "silentdeny [suggestion id] (reason)",
+			string: "silentdeny [id de sugerencia] (reason)",
 			context: "Description for the silentdeny command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -5042,7 +5042,7 @@ module.exports = {
 			context: "Description for the unfollow command"
 		},
 		"COMMAND_USAGE:UNFOLLOW": {
-			string: "unfollow [suggestion id]",
+			string: "unfollow [id de sugerencia]",
 			context: "Description for the unfollow command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -5389,7 +5389,7 @@ module.exports = {
 			context: "Description for the edit command"
 		},
 		"COMMAND_USAGE:EDIT": {
-			string: "edit [suggestion id] [new content]",
+			string: "edit [id de sugerencia] [new content]",
 			context: "Description for the edit command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -5403,7 +5403,7 @@ module.exports = {
 			context: "Description for the approveedit command"
 		},
 		"COMMAND_USAGE:APPROVEEDIT": {
-			string: "approveedit [suggestion id]",
+			string: "approveedit [id de sugerencia]",
 			context: "Description for the approveedit command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -5417,7 +5417,7 @@ module.exports = {
 			context: "Description for the denyedit command"
 		},
 		"COMMAND_USAGE:DENYEDIT": {
-			string: "denyedit [suggestion id]",
+			string: "denyedit [id de sugerencia]",
 			context: "Description for the denyedit command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -5431,7 +5431,7 @@ module.exports = {
 			context: "Description for the shortinfo command"
 		},
 		"COMMAND_USAGE:SINFO": {
-			string: "shortinfo [suggestion id]",
+			string: "shortinfo [id de sugerencia]",
 			context: "Usage for the shortinfo command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},

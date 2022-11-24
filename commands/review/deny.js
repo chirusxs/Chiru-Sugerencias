@@ -10,7 +10,7 @@ module.exports = {
 	controls: {
 		name: "deny",
 		permission: 3,
-		usage: "deny [suggestion id] (reason)",
+		usage: "deny [id de sugerencia] (reason)",
 		aliases: ["reject", "refuse", "no"],
 		description: "Denies a suggestion",
 		image: "images/Deny.gif",
