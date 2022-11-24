@@ -1,4 +1,3 @@
-const { slash_url } = require("../commands/other/invite");
 const { lists } = require("../commands/other/vote");
 const { string } = require("./strings");
 const { dbModify } = require("./db");
