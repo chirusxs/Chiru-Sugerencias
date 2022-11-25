@@ -4062,7 +4062,7 @@ module.exports = {
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
 		"COMMAND_DESC:AUTOSETUP": {
-			string: "Automatically sets up channels and configures the bot",
+			string: "Configura automáticamente el bot",
 			context: "Description for the autosetup command"
 		},
 		"COMMAND_USAGE:AUTOSETUP": {
@@ -4071,11 +4071,11 @@ module.exports = {
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
 		"COMMAND_DESC:CONFIG": {
-			string: "Shows/edits server configuration",
+			string: "Muestra o edita la configuración del bot",
 			context: "Description for the config command"
 		},
 		"COMMAND_USAGE:CONFIG": {
-			string: "config (element) (additional parameters)",
+			string: "config (ajuste) (parámentros adicionales)",
 			context: "Description for the config command\n" +
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
@@ -4094,7 +4094,7 @@ module.exports = {
 				"**Translate the names of arguments (ex. \"suggestion id\"), don't translate actual arguments that are input into the bot (ex. \"on\", \"off\", \"toggle\")**"
 		},
 		"COMMAND_DESC:SETUP": {
-			string: "Walks you through an interactive configuration process",
+			string: "Ejecuta un proceso interactivo de configuración general",
 			context: "Description for the setup command"
 		},
 		"COMMAND_USAGE:SETUP": {
@@ -4439,11 +4439,11 @@ module.exports = {
 				"**Leave** `{{p}}` **as-is, it is replaced in the help command.**"
 		},
 		"MODULE_NAME:CONFIGURATION": {
-			string: "Configuration",
+			string: "Configuración",
 			context: "The name of the Configuration module"
 		},
 		"MODULE_DESC:CONFIGURATION": {
-			string: "Commands for configuring the bot",
+			string: "Comandos para configurar el bot",
 			context: "The description for the Configuration module"
 		},
 		"MODULE_NAME:DEVELOPER": { string: "Developer", context: "The name of the Developer module" },
