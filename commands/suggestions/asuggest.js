@@ -13,6 +13,6 @@ module.exports = {
 		docs: "topics/anonymous-suggestions"
 	},
 	do: async (locale, message, client) => {
-		return message.channel.send(`${string(locale, "ANON_SUGGEST_SLASH_NOTICE")}\n${slash_url.replace("[ID]", client.user.id).slice(0, -1)}&guild_id=${message.guild.id}>`);
+		return message.channel.send(`${string(locale, "ANON_SUGGEST_SLASH_NOTICE")}`);
 	}
 };
