@@ -4452,16 +4452,16 @@ module.exports = {
 			context: "The description for the Developer module"
 		},
 		"MODULE_NAME:GLOBAL STAFF": {
-			string: "Global Staff",
+			string: "Cúpula administrativa",
 			context: "The name of the Global Staff module"
 		},
 		"MODULE_DESC:GLOBAL STAFF": {
-			string: "Commands usable by global Suggester staff members",
+			string: "Comandos para la cúpula administrativa",
 			context: "The description for the Global Staff module"
 		},
-		"MODULE_NAME:MODERATOR": { string: "Moderator", context: "The name of the Moderator module" },
+		"MODULE_NAME:MODERATOR": { string: "Moderación", context: "The name of the Moderator module" },
 		"MODULE_DESC:MODERATOR": {
-			string: "Commands for moderating who can submit suggestions",
+			string: "Comandos para la moderación del bot",
 			context: "The description for the Moderator module"
 		},
 		"MODULE_NAME:OTHER": { string: "Other", context: "The name of the Other module" },

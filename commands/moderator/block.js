@@ -8,13 +8,12 @@ const ms = require("ms");
 const humanizeDuration = require("humanize-duration");
 module.exports = {
 	controls: {
-		name: "bl",
+		name: "bloquear",
 		permission: 3,
-		usage: "block [user] (duration) (reason)",
-		aliases: ["disallow", "block", "bl"],
-		description: "Blocks a user from using the bot in this server",
+		usage: "bloquear [miembro] (duración) (razón)",
+		description: "Bloquea el uso del bot a alguien",
 		enabled: true,
-		examples: "`{{p}}block @Brightness™`\nBlocks Brightness™ from using the bot in this server\n\n`{{p}}block 255834596766253057 Spamming suggestions`\nBlocks a user with ID 255834596766253057 from using the bot in this server for \"Spamming suggestions\"\n\n`{{p}}block @Brightness™ 1h`\nBlocks Brightness™ from using the bot in this server for 1 hour\n\n`{{p}}block 255834596766253057 2h Spamming suggestions`\nBlocks a user with ID 255834596766253057 from using the bot in this server for 2 hours with reason \"Spamming suggestions\"",
+		examples: "`{{p}}bloquear @Chiruso`\nBloquea el uso del bot a Chiruso\n\n`{{p}}bloquear 851072040189427722 Enviar muchas sugerencias molestas`\nBloquea el uso del bot a Chiruso con su Id. por la razón \"Enviar muchas sugerencias molestas\"\n\n`{{p}}bloquear @Chiruso 1h`\nBloquea el uso del bot a Chiruso durante una hora",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS", "EMBED_LINKS", "ADD_REACTIONS"],
 		cooldown: 5,
 		docs: "staff/block"

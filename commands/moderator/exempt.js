@@ -5,12 +5,12 @@ const { fetchUser } = require("../../utils/misc.js");
 const { string } = require("../../utils/strings");
 module.exports = {
 	controls: {
-		name: "exempt",
+		name: "eximir",
 		permission: 3,
-		usage: "exempt [user]",
-		description: "Allows a user to bypass the server's configured suggestion cooldown",
+		usage: "eximir [miembro]",
+		description: "Exime a alguien del tiempo de espera para enviar sugerencias",
 		enabled: true,
-		examples: "`{{p}}exempt @Brightness™`\nExempts Brightness™ from the configured suggestion cooldown\n\n`{{p}}exempt 255834596766253057`\nExempts a user with ID 255834596766253057 from the configured suggestion cooldown",
+		examples: "`{{p}}eximir @Chiruso`\nExime a Chiruso del tiempo de espera\n\n`{{p}}eximir 851072040189427722`\nExime a Chiruso usando su Id. del tiempo de espera",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS", "EMBED_LINKS", "ADD_REACTIONS"],
 		cooldown: 5,
 		docs: "staff/exempt"

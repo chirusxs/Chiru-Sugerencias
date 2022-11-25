@@ -2,18 +2,18 @@ const { dbModifyId, dbQuery } = require("../../utils/db");
 const { string } = require("../../utils/strings");
 module.exports = {
 	controls: {
-		name: "allowlist",
+		name: "listaservidores",
 		permission: 1,
 		aliases: ["al"],
-		usage: "allowlist [add/remove] [guild id]",
-		description: "Adds a server to the allowed list",
-		examples: "`{{p}}allowlist add 681490407862829073`\nAdds server 681490407862829073 to the allowed list\n\n`{{p}}allowlist remove 681490407862829073`\nRemoves server 681490407862829073 from the allowed list",
+		usage: "listaservidores [agregar/quitar] [id de servidor]",
+		description: "Agrega un servidor a la lista de servidores permitidos",
+		examples: "`{{p}}listaservidores agregar 681490407862829073`\nAgrega el servidor 681490407862829073 a la lista\n\n`{{p}}listaservidores quitar 787075858895863888`\nQuita el servidor 787075858895863888 de la lista",
 		enabled: true,
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS"]
 	},
 	do: async (locale, message, client, args) => {
 		switch (args[0]) {
-		case "add":
+		case "agregar":
 		case "+": {
 			if (!args[1]) return message.channel.send(string(locale, "INVALID_GUILD_ID_ERROR", {}, "error"));
 			let qServerDB = await dbQuery("Server", {id: args[1]});
@@ -21,8 +21,7 @@ module.exports = {
 			await dbModifyId("Server", qServerDB.id, qServerDB);
 			return message.channel.send(string(locale, "GUILD_ALLOWLIST_ADD_SUCCESS", { guild: qServerDB.id }, "success"));
 		}
-		case "remove":
-		case "rm":
+		case "quitar":
 		case "-": {
 			if (!args[1]) return message.channel.send(string(locale, "INVALID_GUILD_ID_ERROR", {}, "error"));
 			let qServerDB = await dbQuery("Server", {id: args[1]});

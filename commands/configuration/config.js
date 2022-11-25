@@ -13,12 +13,12 @@ module.exports = {
 	controls: {
 		name: "config",
 		permission: 2,
-		aliases: ["serverconfig", "cfg", "configure"],
-		usage: "config (element) (additional parameters)",
-		description: "Shows/edits server configuration",
+		aliases: ["configuración", "configuracion"],
+		usage: "config (ajuste) (parámentros adicionales)",
+		description: "Muestra o edita la configuración del bot",
 		image: "images/Config.gif",
 		enabled: true,
-		examples: "Use `{{p}}config help` to view detailed instructions",
+		examples: "Usa `{{p}}config ayuda` para ver información detallada",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS", "USE_EXTERNAL_EMOJIS", "ADD_REACTIONS", "READ_MESSAGE_HISTORY"],
 		cooldown: 5,
 		docs: "config/configuration"
@@ -1351,7 +1351,7 @@ module.exports = {
 			}*/];
 
 		switch (args[0] ? args[0].toLowerCase() : "help") {
-		case "help": {
+		case "ayuda": {
 			if (args[1]) {
 				let e = elements.find(e => e.names.includes(args[1].toLowerCase()));
 				if (!e) return message.channel.send(string(locale, "UNKNOWN_ELEMENT_ERROR", {}, "error"));

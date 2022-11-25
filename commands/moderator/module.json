@@ -1,5 +1,5 @@
 {
-  "name": "Moderator",
-  "description": "Commands for moderating who can submit suggestions",
+  "name": "Moderación",
+  "description": "Comandos para la moderación del bot",
   "position": 3
 }

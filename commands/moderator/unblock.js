@@ -5,13 +5,12 @@ const { fetchUser } = require("../../utils/misc.js");
 const { string } = require("../../utils/strings");
 module.exports = {
 	controls: {
-		name: "unblock",
+		name: "desbloquear",
 		permission: 3,
-		usage: "unblock [user]",
-		aliases: ["allow", "unbl"],
-		description: "Unblocks a user from using the bot in this server",
+		usage: "desbloquear [miembro]",
+		description: "Desbloquea el uso del bot a alguien",
 		enabled: true,
-		examples: "`{{p}}unblock @Brightness™`\nUnblocks Brightness™ from using the bot in this server\n\n`{{p}}unblock 255834596766253057 Accidentally blocked`\nUnblocks a user with ID 255834596766253057 from using the bot in this server with reason \"Accidentally blocked\"",
+		examples: "`{{p}}desbloquear @Chiruso`\nDesbloquea el uso del bot a Chiruso\n\n`{{p}}desbloquear 851072040189427722 Bloqueo accidental`\nDesbloquea el uso del bot a Chiruso con su Id. con la razón \"Bloqueo accidental\"",
 		permissions: ["VIEW_CHANNEL", "SEND_MESSAGES", "USE_EXTERNAL_EMOJIS"],
 		cooldown: 5,
 		docs: "staff/unblock"
