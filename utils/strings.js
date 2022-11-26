@@ -1691,7 +1691,7 @@ module.exports = {
 			context: "Shown when live vote counts are disabled and a guild tries to disable it"
 		},
 		"CFG_ANONYMOUS_ENABLED": {
-			string: "Anonymous suggestions can be submitted via `/asuggest`. The identity of the submitting user will be visible to staff but not in the public suggestions feed.\n> If the command does not appear, the bot may need re-invited to allow use of slash commands using this link: {{invite}}",
+			string: "Anonymous suggestions can be submitted via `/asuggest`. The identity of the submitting user will be visible to staff but not in the public suggestions feed.\n> If the command does not appear, the bot may need re-invited to allow use of slash commands using this link",
 			context: "Shown when a guild has enabled anonymous suggestions",
 			replaced: {
 				invite: {
@@ -2849,7 +2849,7 @@ module.exports = {
 			context: "Header for the What's Next? section of the tutorial embed"
 		},
 		"TUTORIAL_NEXT_DESCRIPTION_NEW": {
-			string: "After you run `{{prefix}}setup`, users can submit suggestions and the bot will work. If you are looking for more advanced configuration options like custom suggestion feed reactions and auto-cleaning of suggestion commands, try out `{{prefix}}config`.\n\nIf you're having an issue, or just want to find out more about the bot, head over to the __Suggester support server__: {{invite}}\nThis embed can be shown at any time using the `{{prefix}}tutorial` command.",
+			string: "After you run `{{prefix}}setup`, users can submit suggestions and the bot will work. If you are looking for more advanced configuration options like custom suggestion feed reactions and auto-cleaning of suggestion commands, try out `{{prefix}}config`.\n\nIf you're having an issue, or just want to find out more about the bot, head over to the __Suggester support server__:\nThis embed can be shown at any time using the `{{prefix}}tutorial` command.",
 			context: "Description for the What's Next? section of the tutorial embed",
 			replaced: {
 				prefix: {
@@ -3171,7 +3171,7 @@ module.exports = {
 			context: "Error shown when a user specifies an invalid locale"
 		},
 		"USER_LOCALE_SET_SUCCESS": {
-			string: "Your locale has been successfully set to **{{name}}**. You can report issues with this locale and help translate it by joining the Suggester support server: {{invite}}",
+			string: "Your locale has been successfully set to **{{name}}**. You can report issues with this locale and help translate it by joining the Suggester support server:",
 			context: "Success message shown when the locale is set for a user",
 			replaced: {
 				name: {
@@ -3185,7 +3185,7 @@ module.exports = {
 			}
 		},
 		"GUILD_LOCALE_SET_SUCCESS": {
-			string: "This server's locale has been successfully set to **{{name}}**. You can report issues with this locale and help translate it by joining the Suggester support server: {{invite}}",
+			string: "This server's locale has been successfully set to **{{name}}**. You can report issues with this locale and help translate it by joining the Suggester support server:",
 			context: "Success message shown when the locale is set for a server",
 			replaced: {
 				name: {
