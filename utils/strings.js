@@ -2367,11 +2367,11 @@ module.exports = {
 			context: "Denotes the vote opinion (upvotes-downvotes) for the suggestion"
 		},
 		"VOTE_COUNT_UP": {
-			string: "<:votopositivo:830691491403399189> V. Positivos:",
+			string: "<:votopositivo:830691491403399189> Positivos:",
 			context: "Denotes the number of upvotes for the suggestion"
 		},
 		"VOTE_COUNT_DOWN": {
-			string: "<:votonegativo:830691491348611092> V. Negativos:",
+			string: "<:votonegativo:830691491348611092> Negativos:",
 			context: "Denotes number of downvotes for the suggestion"
 		},
 		"UNKNOWN": {
