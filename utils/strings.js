@@ -1793,7 +1793,7 @@ module.exports = {
 			context: "Shown when there is a suggestion with no content"
 		},
 		"SUGGESTION_FEED_LINK": {
-			string: "Enlace a sugerencia",
+			string: "Enlace",
 			context: "Hyperlink title to the suggestions feed post"
 		},
 		"COMMENT_TITLE_ANONYMOUS": {
@@ -2511,7 +2511,7 @@ module.exports = {
 			context: "Denotes a suggestion await staff review"
 		},
 		"QUEUE_POST_LINK": {
-			string: "Enlace a sugerencia",
+			string: "Ir a la sugerencia",
 			context: "Hyperlink for the queue post of a suggestion awaiting review"
 		},
 		"STATUS_IMPLEMENTED": {
@@ -2575,7 +2575,7 @@ module.exports = {
 			context: "Header for the Status Edited embed"
 		},
 		"IMPLEMENTED_LINK": {
-			string: "Enlace a sugerencia",
+			string: "Ir a la sugerencia",
 			context: "Hyperlink to the implemented archive channel post when a suggestion is archived"
 		},
 		"STATUS_MARK_DM_TITLE": {
