@@ -85,11 +85,11 @@ module.exports = {
 			}
 		},
 		"NO_STATUS_ERROR": {
-			string: "You must specify a valid status!",
+			string: "¡Debes especificar un estado válido!",
 			context: "Error that shows when the botconfig or mark commands are run without any status parameter"
 		},
 		"NONE_OR_INVALID_STATUS_ERROR": {
-			string: "You provided none or an invalid status. Please choose a reaction below to select a status, or {{x}} to cancel.\n\n>>> **Status List:**\n{{list}}",
+			string: "Has introducido un estado válido. Elije una reacción o usa {{x}} para cancelar.\n\n>>> **Lista de estados:**\n{{list}}",
 			context: "Error that shows when the mark command is run without any status parameter",
 			replaced: {
 				x: {
@@ -103,7 +103,7 @@ module.exports = {
 			}
 		},
 		"INVALID_AVATAR_ERROR": {
-			string: "Please provide a valid image URL! Images can have extensions of `jpeg`, `jpg`, `png`, or `gif`",
+			string: "¡Introduce una imagen válida! Los formatos permitidos son `jpeg`, `jpg`, `png` y `gif`",
 			context: "Error that shows when the avatar specified is invalid"
 		},
 		"NO_DB_PARAMS_SPECIFIED_ERROR": {
@@ -181,15 +181,15 @@ module.exports = {
 			context: "String used when the bot is processing an input"
 		},
 		"CANCELLED": {
-			string: "Cancelled",
+			string: "Acción cancelada",
 			context: "String used when an action is cancelled"
 		},
 		"CLOSED": {
-			string: "Closed",
+			string: "Mensaje cerrado",
 			context: "String used when an embed is closed"
 		},
 		"SPECIFY_USER_OR_GUILD_ERROR": {
-			string: "You must specify `user` or `guild`",
+			string: "¡Debes especificar `miembro` o `servidor`!",
 			context: "Error sent when the specified flag type is invalid"
 		},
 		"USER_FLAGS_LIST": {
@@ -313,11 +313,11 @@ module.exports = {
 			}
 		},
 		"INVALID_USER_ERROR": {
-			string: "You must specify a valid user!",
+			string: "¡Debes introducir un(a) miembro válido/a!",
 			context: "String used when no/an invalid user is specified in a command"
 		},
 		"INVALID_MEMBER_ERROR": {
-			string: "You must specify a valid member!",
+			string: "¡Debes introducir un(a) miembro válido/a!",
 			context: "String used when an invalid member is specified in a command"
 		},
 		"INVALID_GLOBALBAN_NEW_PARAMS_ERROR": {
@@ -325,7 +325,7 @@ module.exports = {
 			context: "Error produced when globalban is run with an invalid block setting"
 		},
 		"IS_GLOBALLY_BANNED": {
-			string: "{{banned}} is globally blocked.",
+			string: "{{banned}} ha sido vetado/a globalmente.",
 			context: "String used when a user/guild is globally blocked",
 			replaced: {
 				banned: {
@@ -335,7 +335,7 @@ module.exports = {
 			}
 		},
 		"IS_NOT_GLOBALLY_BANNED": {
-			string: "{{banned}} is not globally blocked.",
+			string: "{{banned}} no ha sido vetado/a globalmente.",
 			context: "String used when a user/guild is not globally blocked",
 			replaced: {
 				banned: {
@@ -345,11 +345,11 @@ module.exports = {
 			}
 		},
 		"USER_PROTECTED_NEW_ERROR": {
-			string: "This user is protected and cannot be blocked.",
+			string: "No es posible bloquear a esa persona.",
 			context: "Error shown when a user is protected and someone attempts to globally block them"
 		},
 		"GUILD_PROTECTED_NEW_ERROR": {
-			string: "This guild is protected and cannot be blocked.",
+			string: "No es posible bloquear a ese servidor.",
 			context: "Error shown when a guild is protected and someone attempts to globally block it"
 		},
 		"GUILD_ALLOWLIST_ADD_SUCCESS": {
@@ -377,11 +377,11 @@ module.exports = {
 			context: "String used when a guild does not have a database entry for fetching data through global commands"
 		},
 		"NONE_CONFIGURED": {
-			string: "None Configured",
+			string: "Sin configurar",
 			context: "Used when a configuration element is not configured"
 		},
 		"NONE": {
-			string: "None",
+			string: "N/A",
 			context: "Filler for when there is none of something"
 		},
 		"CFG_VOTING_ROLES_APPEND": {
@@ -413,11 +413,11 @@ module.exports = {
 			context: "Shown when the downvote reaction config element is disabled"
 		},
 		"ENABLED": {
-			string: "Enabled",
+			string: "Activado/a",
 			context: "Used when something is enabled"
 		},
 		"DISABLED": {
-			string: "Disabled",
+			string: "Desactivado/a",
 			context: "Used when something is disabled"
 		},
 		"CFG_MODE_REVIEW": {
@@ -429,7 +429,7 @@ module.exports = {
 			context: "Shown when the mode is set to autoapprove"
 		},
 		"ERROR": {
-			string: "An error occurred. Please try again.",
+			string: "Ocurrió un error desconocido. Inténtalo nuevamente.",
 			context: "Used when an unknown error occurs."
 		},
 		"SERVER_CONFIGURATION_TITLE": {
@@ -555,11 +555,11 @@ module.exports = {
 			context: "Usage field name in help command"
 		},
 		"HELP_EXAMPLES": {
-			string: "Examples",
+			string: "Ejemplos",
 			context: "Examples field name in help command"
 		},
 		"HELP_DOCUMENTATION": {
-			string: "Documentation",
+			string: "Documentación",
 			context: "Documentation field name in help command"
 		},
 		"HELP_ADDITIONAL_INFO": {
@@ -571,19 +571,19 @@ module.exports = {
 			context: "Alias field name in help command"
 		},
 		"HELP_ALIAS_PLURAL": {
-			string: "Aliases",
+			string: "Alias",
 			context: "Aliases field name in help command"
 		},
 		"HELP_DOCS_NEW": {
-			string: "Documentation",
+			string: "Documentación",
 			context: "Documentation field name in help command"
 		},
 		"COMMAND_DISABLED": {
-			string: "This command is currently disabled globally.",
+			string: "Este comando ha sido deshabilitado.",
 			context: "Used when a command is disabled globally"
 		},
 		"COMMAND_DISABLED_SERVER": {
-			string: "This command has been disabled on this server",
+			string: "Este comando ha sido deshabilitado",
 			context: "Error shown when a command is disabled for a server"
 		},
 		"INVITE_BOT": {
@@ -611,35 +611,35 @@ module.exports = {
 			}
 		},
 		"NOTIFICATIONS_ENABLED": {
-			string: "Notifications are **enabled**. You will receive a DM when an action is taken on any of your suggestions.",
+			string: "¡Las nofiticaciones fueron **activadas**! Ahora recibirás un MD para notificarte de acciones y cambios en las sugerencias que sigues.",
 			context: "Shown when a user has enabled notifications"
 		},
 		"NOTIFICATIONS_DISABLED": {
-			string: "Notifications are **disabled**. You will not receive a DM when an action is taken on any of your suggestions.",
+			string: "¡Las nofiticaciones fueron **desactivadas**! Ya no recibirás un MD para notificarte de acciones y cambios en las sugerencias que sigues.",
 			context: "Shown when a user has disabled notifications"
 		},
 		"NOTIFICATIONS_ALREADY_ENABLED": {
-			string: "DM Notifications are already enabled.",
+			string: "Las notificaciones ya están activadas.",
 			context: "Shown when notifications are enabled and a user tries to enable them"
 		},
 		"NOTIFICATIONS_ALREADY_DISABLED": {
-			string: "DM Notifications are already disabled.",
+			string: "Las notificaciones ya están desactivadas.",
 			context: "Shown when notifications are disabled and a user tries to disable them"
 		},
 		"AUTOFOLLOW_ENABLED": {
-			string: "Automatic following is **enabled**. You will automatically follow suggestions when you upvote them.",
+			string: "¡El seguimiento automático fue **activado**! Ahora seguirás a las sugerencias que votes positivamente.",
 			context: "Shown when a user has enabled automatic following"
 		},
 		"AUTOFOLLOW_DISABLED": {
-			string: "Automatic following is **disabled**. You will not automatically follow suggestions when you upvote them, and you will not receive notifications for any suggestions you've automatically followed in the past.",
+			string: "¡El seguimiento automático fue **desactivado**! Ya no seguirás a las sugerencias que votes positivamente.",
 			context: "Shown when a user has disabled automatic following"
 		},
 		"AUTOFOLLOW_ALREADY_ENABLED": {
-			string: "Automatic following is already enabled.",
+			string: "El seguimiento automático ya está activado.",
 			context: "Shown when automatic following is enabled and a user tries to enable it"
 		},
 		"AUTOFOLLOW_ALREADY_DISABLED": {
-			string: "Automatic following is already disabled.",
+			string: "El seguimiento automático ya está desactivado.",
 			context: "Shown when automatic following is disabled and a user tries to disable them"
 		},
 		"GUILD_AUTOFOLLOW_ENABLED": {
@@ -667,31 +667,31 @@ module.exports = {
 			context: "Shown when protips are disabled and a user tries to disable them"
 		},
 		"ON_OFF_TOGGLE_ERROR": {
-			string: "You must specify `on`, `off`, or `toggle`.",
+			string: "Debes especificar `sí`, `no` o `alternar`.",
 			context: "Used when a configuration element requires on, off, or toggle parameters"
 		},
 		"PING_DEVELOPERS_HEADER": {
-			string: "Developers",
+			string: "Equipo de desarrollo",
 			context: "Developers header for the ping command"
 		},
 		"PING_GUILD_COUNT_HEADER": {
-			string: "Guild Count",
+			string: "Cantidad de servidores",
 			context: "Guild Count header for the ping command (also used in stats)"
 		},
 		"PING_UPTIME_HEADER": {
-			string: "Uptime",
+			string: "Tiempo en línea",
 			context: "Uptime header for the ping command"
 		},
 		"PING_SHARD_PING_HEADER": {
-			string: "Shard Ping",
+			string: "Ping de la shard",
 			context: "Shard Ping header for the ping command"
 		},
 		"PING_BOT_LATENCY_HEADER": {
-			string: "Bot Latency",
+			string: "Latencia del bot",
 			context: "Bot latency (previously 'Edit Time') header for the ping command"
 		},
 		"PING_MEMORY_HEADER": {
-			string: "Memory Usage",
+			string: "Uso de memoria",
 			context: "Memory Usage header for the ping command"
 		},
 		"UNCONFIGURED_ERROR": {
@@ -709,7 +709,7 @@ module.exports = {
 			}
 		},
 		"SUBMIT_NOT_COMMAND_CHANNEL_ERROR": {
-			string: "Suggestions can only be submitted in the following channels: {{channels}}",
+			string: "Las sugerencias solo pueden ser enviadas en los siguientes canales: {{channels}}",
 			context: "Error when a user uses suggest in a non-command channel",
 			replaced: {
 				channels: {
@@ -719,7 +719,7 @@ module.exports = {
 			}
 		},
 		"EDIT_NOT_COMMAND_CHANNEL_ERROR": {
-			string: "Suggestions can only be edited in the following channels: {{channels}}",
+			string: "Las sugerencias solo pueden ser editadas en los siguientes canales: {{channels}}",
 			context: "Error when a user uses edit in a non-command channel",
 			replaced: {
 				channels: {
@@ -759,7 +759,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_FOOTER": {
-			string: "Id. de sugerencia: {{id}} | Creada el",
+			string: "Id. de sugerencia: {{id}}",
 			context: "Footer for suggestion embeds",
 			replaced: {
 				id: {
@@ -769,7 +769,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_FOOTER_WITH_EDIT": {
-			string: "Id. de sugerencia: {{id}} | Editada por {{editor}} | Creada el",
+			string: "Id. de sugerencia: {{id}} | Editada por {{editor}}",
 			context: "Footer for suggestion embeds",
 			replaced: {
 				id: {
@@ -1753,55 +1753,55 @@ module.exports = {
 			context: "Error if no configuration element is specified"
 		},
 		"INVALID_SUGGESTION_ID_ERROR": {
-			string: "Please provide a valid suggestion ID.",
+			string: "Introduce una Id. de sugerencia válida.",
 			context: "Error shown when the specified suggestion ID is invalid"
 		},
 		"SUGGESTION_NOT_APPROVED_ERROR": {
-			string: "You can only perform this action on approved suggestions.",
+			string: "¡Solo puedes hacer eso con sugerencias verificadas!",
 			context: "Error shown when a suggestion is not approved and an action like comment/mark is used"
 		},
 		"SUGGESTION_IMPLEMENTED_ERROR": {
-			string: "This suggestion has been marked as implemented and moved to the implemented archive channel, so no further actions can be taken on it.",
+			string: "Esa sugerencia ya ha sido marcada como implementada.",
 			context: "Error shown when a suggestion has already been marked as implemented and an action like comment/mark is used"
 		},
 		"SUGGESTION_DENIED_EDIT_ERROR": {
-			string: "This suggestion has been denied, and therefore cannot be edited.",
+			string: "Esa sugerencia ha sido declinada y no puede ser editada.",
 			context: "Error shown when a suggestion has been denied and is attempted to be edited"
 		},
 		"NO_COMMENT_ERROR": {
-			string: "You must provide a comment!",
+			string: "¡Debes introducir un comentario!",
 			context: "Error shown when no comment is specified for the comment command"
 		},
 		"TOO_MANY_COMMENTS_ERROR_NEW": {
-			string: "Due to Discord embed limitations, suggestions can only have up to 15 comments.",
+			string: "Debido a limitaciones de Discord, las sugerencias solo pueden tener hasta 15 comentarios.",
 			context: "Error shown when a suggestion has the maximum number of comments"
 		},
 		"COMMENT_TOO_LONG_ERROR": {
-			string: "Comments cannot be longer than 1024 characters.",
+			string: "Los comentarios no pueden tener más de 1024 caracteres.",
 			context: "Error shown when a specified comment is too long"
 		},
 		"SUGGESTION_FEED_MESSAGE_NOT_EDITED_ERROR": {
-			string: "There was an error editing the suggestion feed message. Please check that the suggestion feed message exists and try again.",
+			string: "Esa sugerencia no pudo ser editada. Esto puede deberse a que fue eliminada o nunca existió.",
 			context: "Error shown when the suggestion feed embed cannot be edited"
 		},
 		"SUGGESTION_FEED_MESSAGE_NOT_FETCHED_ERROR": {
-			string: "There was an error fetching the suggestion feed message. Please check that the suggestion feed message exists and try again.",
+			string: "Esa sugerencia no pudo ser eliminada. Esto puede deberse a que fue eliminada o nunca existió.",
 			context: "Error shown when the suggestion feed embed cannot be deleted"
 		},
 		"NO_SUGGESTION_CONTENT": {
-			string: "[No Suggestion Content]",
+			string: "[Sugerencia sin texto]",
 			context: "Shown when there is a suggestion with no content"
 		},
 		"SUGGESTION_FEED_LINK": {
-			string: "Suggestions Feed Post",
+			string: "Enlace a sugerencia",
 			context: "Hyperlink title to the suggestions feed post"
 		},
 		"COMMENT_TITLE_ANONYMOUS": {
-			string: "Staff Comment",
+			string: "Comentario del staff",
 			context: "Title for an anonymous comment"
 		},
 		"COMMENT_TITLE": {
-			string: "Comment from {{user}} (ID {{id}})",
+			string: "Comentario de {{user}} (Id. {{id}})",
 			context: "Title for a comment",
 			replaced: {
 				user: {
@@ -1815,15 +1815,15 @@ module.exports = {
 			}
 		},
 		"ANONYMOUS_COMMENT_ADDED_TITLE": {
-			string: "Anonymous Comment Added",
+			string: "Comentario anónimo agregado",
 			context: "Header for the Anonymous Comment Added embed"
 		},
 		"COMMENT_ADDED_TITLE": {
-			string: "Comment Added",
+			string: "Comentario agregado",
 			context: "Header for the Comment Added embed"
 		},
 		"COMMENT_ADDED_DM_TITLE": {
-			string: "A comment was added to your suggestion in **{{server}}**!",
+			string: "¡Una sugerencia que creaste ha recibido un comentario!",
 			context: "Title for the DM notification of a comment being added to a suggestion",
 			replaced: {
 				server: {
@@ -1833,7 +1833,7 @@ module.exports = {
 			}
 		},
 		"COMMENT_ADDED_DM_TITLE_FOLLOW": {
-			string: "A comment was added to a suggestion you follow in **{{server}}**!",
+			string: "¡Una sugerencia a la que sigues ha recibido un comentario!",
 			context: "Title for the DM notification of a comment being added to a suggestion when a user is following the suggestion",
 			replaced: {
 				server: {
@@ -1843,7 +1843,7 @@ module.exports = {
 			}
 		},
 		"ANONYMOUS_COMMENT_ADDED_LOG": {
-			string: "{{user}} added an anonymous comment to #{{id}}",
+			string: "{{user}} agregó un comentario anónimo a la sugerencia #{{id}}",
 			context: "Title for the log embed when an anonymous comment is added",
 			replaced: {
 				user: {
@@ -1857,7 +1857,7 @@ module.exports = {
 			}
 		},
 		"COMMENT_ADDED_LOG": {
-			string: "{{user}} added a comment to #{{id}}",
+			string: "{{user}} agregó un comentario a la sugerencia #{{id}}",
 			context: "Title for the log embed when a comment is added",
 			replaced: {
 				user: {
@@ -1871,15 +1871,15 @@ module.exports = {
 			}
 		},
 		"SUGGESTION": {
-			string: "Suggestion",
+			string: "Sugerencia",
 			context: "Header used throughout the bot showing the suggestion in question"
 		},
 		"MODE_AUTOAPPROVE_DISABLED_ERROR": {
-			string: "This command is disabled when the mode is set to autoapprove.",
+			string: "Este comentario ha sido deshabilitado porque el modo de revisión es `autoapprove`.",
 			context: "Error shown when a command only usable in the review mode is used in the autoapprove mode"
 		},
 		"SUGGESTION_ALREADY_APPROVED_APPROVE_ERROR": {
-			string: "This suggestion has already been approved! Use `{{prefix}}delete {{id}}` to remove it.",
+			string: "¡Esa sugerencia ya ha sido verificada! Usa `{{prefix}}eliminar {{id}}` para eliminarla.",
 			context: "Error shown when a suggestion has already been approved and the approve command is used",
 			replaced: {
 				prefix: {
@@ -1893,27 +1893,27 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_ALREADY_DENIED_APPROVE_ERROR": {
-			string: "This suggestion has already been denied! Previously denied suggestions cannot be approved.",
+			string: "¡Esa sugerencia ya ha sido declinada!",
 			context: "Error shown when a suggestion is already denied and a user attempts to approve it"
 		},
 		"SUGGESTION_ALREADY_DENIED_DENIED_ERROR": {
-			string: "This suggestion has already been denied!",
+			string: "¡Esa sugerencia ya ha sido declinada!",
 			context: "Error shown when a suggestion is already denied and a user attempts to deny it"
 		},
 		"SUGGESTION_APPROVED_TITLE": {
-			string: "Suggestion Approved",
+			string: "Sugerencia verificada",
 			context: "Title for the suggestion approved embed"
 		},
 		"SUGGESTION_EDIT_APPROVED_TITLE": {
-			string: "Suggestion Edit Approved",
+			string: "Edición de sugerencia verificada",
 			context: "Title for the suggestion edit approved embed"
 		},
 		"SUGGESTION_EDIT_DENIED_TITLE": {
-			string: "Suggestion Edit Denied",
+			string: "Edición de sugerencia declinada",
 			context: "Title for the suggestion edit denied embed"
 		},
 		"APPROVED_BY": {
-			string: "Approved by {{user}}",
+			string: "Verificada por {{user}}",
 			context: "Details who approved a suggestion",
 			replaced: {
 				user: {
@@ -1923,7 +1923,7 @@ module.exports = {
 			}
 		},
 		"APPROVED_DM_TITLE": {
-			string: "Your suggestion was approved in **{{server}}**!",
+			string: "¡Una sugerencia que creaste ha sido verificada!",
 			context: "Title for the DM notification of a suggestion being approved",
 			replaced: {
 				server: {
@@ -1933,7 +1933,7 @@ module.exports = {
 			}
 		},
 		"APPROVED_DM_TITLE_FOLLOW": {
-			string: "A suggestion you follow was approved in **{{server}}**!",
+			string: "¡Una sugerencia que sigues ha sido verificada!",
 			context: "Title for the DM notification of a suggestion being approved on a suggestion followed",
 			replaced: {
 				server: {
@@ -1943,7 +1943,7 @@ module.exports = {
 			}
 		},
 		"APPROVED_LOG": {
-			string: "{{user}} approved #{{id}}",
+			string: "{{user}} verificó #{{id}}",
 			context: "Title for the log embed when a suggestion is approved",
 			replaced: {
 				user: {
@@ -1957,27 +1957,27 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_CHANGE_REVIEW_EMBED": {
-			string: "A change was processed on this suggestion",
+			string: "Se procesó un cambio en esta sugerencia",
 			context: "Shown when a suggestion is no longer in review"
 		},
 		"ALREADY_ATTACHMENT_ERROR": {
-			string: "Due to Discord embed limitations, suggestions can only have 1 attachment.",
+			string: "Debido a limitaciones de Discord, las sugerencias solo pueden tener 1 imagen.",
 			context: "Error produced when a suggestion already has an attachment and a user attempts to add an attachment"
 		},
 		"NO_ATTACHMENT_ERROR": {
-			string: "Please provide an attachment!",
+			string: "¡Debes introducir una imagen!",
 			context: "Error shown when a user does not provide an attachment for the attach command"
 		},
 		"ATTACHMENT_ADDED_HEADER": {
-			string: "Attachment Added",
+			string: "¡Se ha adjuntado la imagen a la sugerencia!",
 			context: "Title of the reply embed when an attachment is added"
 		},
 		"ATTACHMENT_TOO_BIG": {
-			string: "The attached file is too big. Please upload an image under 8 MB",
+			string: "Esa imagen supera el límite de 8 MB de tamaño.",
 			context: "The error message to be sent if an image is larger than 8mb (webhook max filesize)"
 		},
 		"ATTACHED_LOG": {
-			string: "{{user}} added an attachment to #{{id}}",
+			string: "{{user}} agregó una imagen a #{{id}}",
 			context: "Title for the log embed when an attachment is added to a suggestion",
 			replaced: {
 				user: {
@@ -2161,7 +2161,7 @@ module.exports = {
 			}
 		},
 		"PING_COUNT_CONTENT": {
-			string: "{{guilds}} servers across {{shards}} shards",
+			string: "{{guilds}} servidores y {{shards}} shards",
 			context: "Shows total number of guilds and shards in the ping command",
 			replaced: {
 				guilds: {
@@ -2175,7 +2175,7 @@ module.exports = {
 			}
 		},
 		"PING_COUNT_CONTENT_SHARD": {
-			string: "{{guilds}} servers on this shard",
+			string: "{{guilds}} servidores en esta shard",
 			context: "Shows total number of guilds on a shard",
 			replaced: {
 				guilds: {
@@ -2195,23 +2195,23 @@ module.exports = {
 			}
 		},
 		"BLOCK_NO_ARGS_ERROR": {
-			string: "You must specify a user or `list` to show a list of blocked users.",
+			string: "¡Debes introducir un(a) miembro!",
 			context: "Error shown when no parameters are speciied for the block command"
 		},
 		"BLOCKLIST_EMPTY": {
-			string: "There are no users blocked from using the bot on this server.",
+			string: "No hay bloqueos en este servidor.",
 			context: "Shown when no users are blocked on a server"
 		},
 		"BLOCK_SELF_ERROR": {
-			string: "You cannot block yourself.",
+			string: "No puedes bloquearte a ti mismo.",
 			context: "Error shown when a user attempts to block themselves"
 		},
 		"BLOCK_USER_BOT_ERROR": {
-			string: "This user is a bot, and therefore cannot be blocked.",
+			string: "No puedes bloquear bots.",
 			context: "Error shown when a user attempts to block a bot"
 		},
 		"BLOCK_REASON_TOO_LONG_ERROR": {
-			string: "Block reasons are limited to a length of 1024 characters.",
+			string: "Las razones de bloqueo pueden tener hasta 1024 caracteres.",
 			context: "Error shown when a block reason is too long"
 		},
 		"BEAN_REASON_TOO_LONG_ERROR": {
@@ -2219,27 +2219,27 @@ module.exports = {
 			context: "Error shown when a bean reason is too long"
 		},
 		"BLOCK_GLOBAL_STAFF_ERROR": {
-			string: "Global Suggester staff members cannot be blocked.",
+			string: "La cúpula administrativa no puede ser bloqueada.",
 			context: "Error shown when a user attempts to block a global staff member"
 		},
 		"BLOCK_STAFF_ERROR": {
-			string: "Staff members cannot be blocked.",
+			string: "El personal no puede ser bloqueado.",
 			context: "Error shown when a user attempts to block a server staff member"
 		},
 		"ALREADY_BLOCKED_ERROR": {
-			string: "This user is already blocked from using the bot on this server!",
+			string: "¡Ya se ha bloqueado a ese/a miembro!",
 			context: "Error shown when a user attempts to block a user who has already been blocked"
 		},
 		"BLOCK_REASON_HEADER": {
-			string: "Reason:",
+			string: "Razón:",
 			context: "Shown if a reason is specified for the block command"
 		},
 		"BLOCK_DURATION_HEADER": {
-			string: "Duration:",
+			string: "Duración:",
 			context: "Shown if a duration is specified for the block command"
 		},
 		"BLOCK_SUCCESS": {
-			string: "**{{user}}** (`{{id}}`) has been blocked from using the bot on this server.",
+			string: "**{{user}}** (`{{id}}`) ha sido bloqueado/a en el servidor.",
 			context: "Success message when a user is blocked in a guild",
 			replaced: {
 				user: {
@@ -2253,7 +2253,7 @@ module.exports = {
 			}
 		},
 		"BLOCK_LOG_TITLE": {
-			string: "{{staff}} blocked {{user}}",
+			string: "{{staff}} bloqueó a {{user}}",
 			context: "Title of the log embed when a user is blocked",
 			replaced: {
 				user: {
@@ -2267,7 +2267,7 @@ module.exports = {
 			}
 		},
 		"BLOCK_USER_DATA": {
-			string: "Tag: {{tag}}\nID: {{id}}\nMention: {{mention}}",
+			string: "Etiqueta: {{tag}}\nId: {{id}}\nMención: {{mention}}",
 			context: "Shows data about the user in the blocked embed",
 			replaced: {
 				tag: {
@@ -2285,7 +2285,7 @@ module.exports = {
 			}
 		},
 		"STAFF_MEMBER_LOG_FOOTER": {
-			string: "Staff Member ID: {{id}}",
+			string: "Id. de staff: {{id}}",
 			context: "Shows the staff member ID in the block log embed",
 			replaced: {
 				id: {
@@ -2303,19 +2303,19 @@ module.exports = {
 			context: "Error when the configured implemented suggestions channel is not found"
 		},
 		"DELETION_REASON_TOO_LONG_ERROR": {
-			string: "Deletion reasons are limited to a length of 1024 characters.",
+			string: "Las razones de eliminación pueden tener hasta 1024 caracteres.",
 			context: "Error when the deletion reason is too long"
 		},
 		"DENIAL_REASON_TOO_LONG_ERROR": {
-			string: "Denial reasons are limited to a length of 1024 characters.",
+			string: "Las razones de declinación pueden tener hasta 1024 caracteres.",
 			context: "Error when the denial reason is too long"
 		},
 		"SUGGESTION_DELETED_TITLE": {
-			string: "Suggestion Deleted",
+			string: "Sugerencia eliminada",
 			context: "Title for the suggestion deleted embed"
 		},
 		"DELETED_BY": {
-			string: "Deleted by {{user}}",
+			string: "Eliminada por {{user}}",
 			context: "Details who deleted a suggestion",
 			replaced: {
 				user: {
@@ -2325,11 +2325,11 @@ module.exports = {
 			}
 		},
 		"REASON_GIVEN": {
-			string: "Reason Given",
+			string: "Razón especificada",
 			context: "Denotes the reason in the denied/deleted embed"
 		},
 		"DELETED_DM_TITLE": {
-			string: "Your suggestion was deleted in **{{server}}**!",
+			string: "¡Una sugerencia que creaste ha sido eliminada!",
 			context: "Title for the DM notification of a suggestion being deleted",
 			replaced: {
 				server: {
@@ -2339,7 +2339,7 @@ module.exports = {
 			}
 		},
 		"DELETED_DM_TITLE_FOLLOW": {
-			string: "A suggestion you follow was deleted in **{{server}}**!",
+			string: "¡Una sugerencia que sigues ha sido eliminada!",
 			context: "Title for the DM notification of a suggestion being deleted on a followed suggestion",
 			replaced: {
 				server: {
@@ -2349,7 +2349,7 @@ module.exports = {
 			}
 		},
 		"DELETED_LOG": {
-			string: "{{user}} deleted #{{id}}",
+			string: "{{user}} eliminó #{{id}}",
 			context: "Title for the log embed when a suggestion is deleted",
 			replaced: {
 				user: {
@@ -2363,43 +2363,43 @@ module.exports = {
 			}
 		},
 		"VOTE_COUNT_OPINION": {
-			string: "Opinion:",
+			string: "Votos:",
 			context: "Denotes the vote opinion (upvotes-downvotes) for the suggestion"
 		},
 		"VOTE_COUNT_UP": {
-			string: "Upvotes:",
+			string: "<:votopositivo:830691491403399189> V. Positivos:",
 			context: "Denotes the number of upvotes for the suggestion"
 		},
 		"VOTE_COUNT_DOWN": {
-			string: "Downvotes:",
+			string: "<:votonegativo:830691491348611092> V. Negativos:",
 			context: "Denotes number of downvotes for the suggestion"
 		},
 		"UNKNOWN": {
-			string: "Unknown",
+			string: "Desconocido/a",
 			context: "Shown if something is unknown"
 		},
 		"NO_COMMENT_ID_SPECIFIED_ERROR": {
-			string: "Please provide a valid comment ID.",
+			string: "¡Introduce una Id. de comentario válida!",
 			context: "Error shown when the user does not specify or specifies an invalid comment ID"
 		},
 		"COMMENT_ALREADY_DELETED_ERROR": {
-			string: "This comment has already been deleted!",
+			string: "¡Ese comentario ya ha sido eliminado!",
 			context: "Error shown when a user attempts to delete a previously deleted comment"
 		},
 		"COMMENT_ALREADY_DELETED_ERROR_EDIT": {
-			string: "This comment has been deleted!",
+			string: "¡Ese comentario ha sido eliminado!",
 			context: "Error shown when a user attempts to edit a previously deleted comment"
 		},
 		"COMMENT_NOT_AUTHOR_ERROR": {
-			string: "You are not the author of this comment, so you cannot edit it!",
+			string: "No puedes eliminar el comentario de otra persona.",
 			context: "Error shown when a user attempts to edit a comment they did not create (or is not anonymous)"
 		},
 		"COMMENT_NO_EDIT_CONTENT_ERROR": {
-			string: "You must specify new content for the comment!",
+			string: "¡Introduce el nuevo contenido para el comentario!",
 			context: "Error when no new content is specified for editing a comment"
 		},
 		"DELETED_COMMENT_LOG": {
-			string: "{{user}} deleted comment {{comment}} from #{{id}}",
+			string: "{{user}} eliminó el comentario {{comment}} de #{{id}}",
 			context: "Title for the log embed when a comment is deleted",
 			replaced: {
 				user: {
@@ -2417,7 +2417,7 @@ module.exports = {
 			}
 		},
 		"EDITED_COMMENT_LOG": {
-			string: "{{user}} edited comment {{comment}} on #{{id}}",
+			string: "{{user}} editó el comentario {{comment}} de #{{id}}",
 			context: "Title for the log embed when a comment is edited",
 			replaced: {
 				user: {
@@ -2435,19 +2435,19 @@ module.exports = {
 			}
 		},
 		"COMMENT_DELETED_TITLE": {
-			string: "Comment Deleted",
+			string: "Comentario eliminado",
 			context: "Title when a comment is deleted"
 		},
 		"COMMENT_EDITED_TITLE": {
-			string: "Comment Edited",
+			string: "Comentario editado",
 			context: "Title when a comment is edited"
 		},
 		"SUGGESTION_DENIED_TITLE": {
-			string: "Suggestion Denied",
+			string: "Sugerencia declinada",
 			context: "Title for the suggestion denied embed"
 		},
 		"DENIED_BY": {
-			string: "Denied by {{user}}",
+			string: "Declinada por {{user}}",
 			context: "Details who denied a suggestion",
 			replaced: {
 				user: {
@@ -2457,7 +2457,7 @@ module.exports = {
 			}
 		},
 		"DENIED_DM_TITLE": {
-			string: "Your suggestion was denied in **{{server}}**!",
+			string: "¡Una sugerencia que creaste ha sido declinada!",
 			context: "Title for the DM notification of a suggestion being denied",
 			replaced: {
 				server: {
@@ -2467,7 +2467,7 @@ module.exports = {
 			}
 		},
 		"DENIED_DM_TITLE_FOLLOW": {
-			string: "A suggestion you follow was denied in **{{server}}**!",
+			string: "¡Una sugerencia que sigues ha sido declinada!",
 			context: "Title for the DM notification of a suggestion being denied on a followed suggestion",
 			replaced: {
 				server: {
@@ -2477,7 +2477,7 @@ module.exports = {
 			}
 		},
 		"DENIED_LOG": {
-			string: "{{user}} denied #{{id}}",
+			string: "{{user}} declinó #{{id}}",
 			context: "Title for the log embed when a suggestion is denied",
 			replaced: {
 				user: {
@@ -2491,59 +2491,59 @@ module.exports = {
 			}
 		},
 		"INFO_AUTHOR_HEADER": {
-			string: "Author",
+			string: "Autor(a)",
 			context: "Denotes the suggestion author in the info command"
 		},
 		"INFO_COMMENT_COUNT_HEADER": {
-			string: "Comment Count",
+			string: "Cantidad de comentarios",
 			context: "Denotes the comment count in the info command"
 		},
 		"INFO_INTERNAL_STATUS_HEADER": {
-			string: "Internal Status",
+			string: "Estado interno",
 			context: "Denotes the internal status in the info command"
 		},
 		"INFO_PUBLIC_STATUS_HEADER": {
-			string: "Public Status",
+			string: "Estado público",
 			context: "Denotes the public status in the info command"
 		},
 		"AWAITING_REVIEW_STATUS": {
-			string: "Awaiting Staff Review",
+			string: "Esperando verificación",
 			context: "Denotes a suggestion await staff review"
 		},
 		"QUEUE_POST_LINK": {
-			string: "Queue Post",
+			string: "Enlace a sugerencia",
 			context: "Hyperlink for the queue post of a suggestion awaiting review"
 		},
 		"STATUS_IMPLEMENTED": {
-			string: "Implemented",
+			string: "Implementada",
 			context: "Denotes a suggestion having the implemented status"
 		},
 		"STATUS_PROGRESS": {
-			string: "In Progress",
+			string: "En Progreso",
 			context: "Denotes a suggestion having the in progress status"
 		},
 		"STATUS_CONSIDERATION": {
-			string: "In Consideration",
+			string: "En Consideración",
 			context: "Denotes a suggestion having the in consideration status"
 		},
 		"STATUS_NO": {
-			string: "Not Happening",
+			string: "No Sucederá",
 			context: "Denotes a suggestion having the not happening status"
 		},
 		"STATUS_DEFAULT": {
-			string: "Default",
+			string: "Por defecto",
 			context: "Denotes a suggestion having the default status"
 		},
 		"INFO_IMPLEMENTED": {
-			string: "This suggestion was transferred to the implemented suggestion archive channel.",
+			string: "Esta sugerencia ha sido transferida al canal de sugerencias implementadas.",
 			context: "Note on the info command when a suggestion has been transferred to the implemented archive channel"
 		},
 		"NONE_AWAITING_REVIEW": {
-			string: "There are no suggestions awaiting review!",
+			string: "No hay sugerencias esperando verificación... ¡Hurra!",
 			context: "Shown when the queue is empty in the listqueue command"
 		},
 		"PENDING_REVIEW_HEADER_NUM": {
-			string: "Suggestions Pending Review (showing {{min}}-{{max}} of {{total}})",
+			string: "Pendientes de verificación (mostrando {{min}}-{{max}} de {{total}})",
 			context: "Header for the listqueue embed",
 			replaced: {
 				min: {
@@ -2561,7 +2561,7 @@ module.exports = {
 			}
 		},
 		"STATUS_ALREADY_SET_ERROR": {
-			string: "This suggestion already has a status of **{{status}}**",
+			string: "Esa sugerencia ya tiene el estado **{{status}}**",
 			context: "Error shown when the suggestion already has the status a user is trying to mark",
 			replaced: {
 				status: {
@@ -2571,15 +2571,15 @@ module.exports = {
 			}
 		},
 		"STATUS_EDITED_TITLE": {
-			string: "Status Edited",
+			string: "Estado editado",
 			context: "Header for the Status Edited embed"
 		},
 		"IMPLEMENTED_LINK": {
-			string: "Implemented Archive Post",
+			string: "Enlace a sugerencia",
 			context: "Hyperlink to the implemented archive channel post when a suggestion is archived"
 		},
 		"STATUS_MARK_DM_TITLE": {
-			string: "The status of your suggestion in **{{server}}** was edited!",
+			string: "¡El estado de una sugerencia que creaste ha cambiado!",
 			context: "Title for the DM notification of a status being marked on a suggestion",
 			replaced: {
 				server: {
@@ -2589,7 +2589,7 @@ module.exports = {
 			}
 		},
 		"STATUS_MARK_DM_TITLE_FOLLOW": {
-			string: "The status of a suggestion you follow in **{{server}}** was edited!",
+			string: "¡El estado de una sugerencia que sigues ha cambiado!",
 			context: "Title for the DM notification of a status being marked on a suggestion on a followed suggestion",
 			replaced: {
 				server: {
@@ -2599,7 +2599,7 @@ module.exports = {
 			}
 		},
 		"STATUS_MARK_LOG": {
-			string: "{{user}} set a status for #{{id}}",
+			string: "{{user}} cambió el estado de #{{id}}",
 			context: "Title for the log embed when a status is marked",
 			replaced: {
 				user: {
@@ -2613,19 +2613,19 @@ module.exports = {
 			}
 		},
 		"NONE_SPECIFIED_MASS_ERROR": {
-			string: "You must specify at least one suggestion.",
+			string: "Debes especificar al menos una sugerencia.",
 			context: "Error shown when no suggestions are specified for a mass command"
 		},
 		"NAN_MASS_APPROVE_ERROR": {
-			string: "One or more of the suggestion IDs you've entered is not a number. Please ensure all of your IDs are numbers. If you're trying to specify a comment, add `-r` between the suggestion IDs and the comment.",
+			string: "¡Utiliza solo números enteros! Si quieres eliminar un comentario, utiliza `-r` entre la Id. de sugerencia y la Id. de comentario.",
 			context: "Error shown when a suggestion ID specified in a mass approve command is not a number"
 		},
 		"NAN_MASS_DENY_ERROR": {
-			string: "One or more of the suggestion IDs you've entered is not a number. Please ensure all of your IDs are numbers. If you're trying to specify a reason, add `-r` between the suggestion IDs and the reason.",
+			string: "¡Utiliza solo números enteros! Si quieres especificar una razón, utiliza `-r`entre la Id. de sugerencia y la razón.",
 			context: "Error shown when a suggestion ID specified in a mass deny/delete command is not a number"
 		},
 		"MASS_APPROVE_SUCCESS_TITLE": {
-			string: "Approved {{some}}/{{total}} suggestions",
+			string: "Se verificaron {{some}}/{{total}} sugerencias",
 			context: "Title of the massapprove embed which shows the results of the command",
 			replaced: {
 				some: {
@@ -2639,7 +2639,7 @@ module.exports = {
 			}
 		},
 		"MASS_APPROVE_APPROVE_RESULTS_DETAILED": {
-			string: "**Approved:** {{list}}",
+			string: "**Sugerencias verificadas:** {{list}}",
 			context: "Details which suggestions could be approved in the massapprove command",
 			replaced: {
 				list: {
@@ -2649,7 +2649,7 @@ module.exports = {
 			}
 		},
 		"MASS_APPROVE_FAIL_RESULTS_DETAILED": {
-			string: "**Could Not Approve:** {{list}}",
+			string: "**No se pudo verificar:** {{list}}",
 			context: "Details which suggestions could not be approved in the massapprove command",
 			replaced: {
 				list: {
@@ -2659,11 +2659,11 @@ module.exports = {
 			}
 		},
 		"MASS_APPROVE_ERROR_DETAILS": {
-			string: "One or more of these suggestions could not be approved. Please make sure the suggestion IDs you have provided exist and have not already been approved.",
+			string: "No se pudieron verificar todas las sugerencias. Aségurate de introducir solo Ids. de sugerencias pendientes.",
 			context: "Shows why suggestions generally are not approved in the massapprove command"
 		},
 		"MASS_DELETE_SUCCESS_TITLE": {
-			string: "Deleted {{some}}/{{total}} suggestions",
+			string: "Se eliminaron {{some}}/{{total}} sugerencias",
 			context: "Title of the massdelete embed which shows the results of the command",
 			replaced: {
 				some: {
@@ -2677,7 +2677,7 @@ module.exports = {
 			}
 		},
 		"MASS_DELETE_SUCCESS_RESULTS_DETAILED": {
-			string: "**Deleted:** {{list}}",
+			string: "**Sugerencias eliminadas:** {{list}}",
 			context: "Details which suggestions could be deleted in the massdelete command",
 			replaced: {
 				list: {
@@ -2687,7 +2687,7 @@ module.exports = {
 			}
 		},
 		"MASS_DELETE_FAIL_RESULTS_DETAILED": {
-			string: "**Could Not Delete:** {{list}}",
+			string: "**No se pudieron eliminar:** {{list}}",
 			context: "Details which suggestions could not be deleted in the massdelete command",
 			replaced: {
 				list: {
@@ -2697,11 +2697,11 @@ module.exports = {
 			}
 		},
 		"MASS_DELETE_ERROR_DETAILS": {
-			string: "One or more of these suggestions could not be deleted. Please make sure the suggestion IDs you have provided exist and have not already been deleted/denied.",
+			string: "No se pudieron eliminar todas las sugerencias. Aségurate de introducir solo Ids. de sugerencias verificadas.",
 			context: "Shows why suggestions generally are not deleted in the massdelete command"
 		},
 		"MASS_DENY_SUCCESS_TITLE": {
-			string: "Denied {{some}}/{{total}} suggestions",
+			string: "Se declinaron {{some}}/{{total}} sugerencias",
 			context: "Title of the massdeny embed which shows the results of the command",
 			replaced: {
 				some: {
@@ -2715,7 +2715,7 @@ module.exports = {
 			}
 		},
 		"MASS_DENY_SUCCESS_RESULTS_DETAILED": {
-			string: "**Denied:** {{list}}",
+			string: "**Sugerencias declinadas:** {{list}}",
 			context: "Details which suggestions could be denied in the massdeny command",
 			replaced: {
 				list: {
@@ -2725,7 +2725,7 @@ module.exports = {
 			}
 		},
 		"MASS_DENY_FAIL_RESULTS_DETAILED": {
-			string: "**Could Not Deny:** {{list}}",
+			string: "**No se pudieron declinar:** {{list}}",
 			context: "Details which suggestions could not be denied in the massdeny command",
 			replaced: {
 				list: {
@@ -2735,19 +2735,19 @@ module.exports = {
 			}
 		},
 		"MASS_DENY_ERROR_DETAILS": {
-			string: "One or more of these suggestions could not be denied. Please make sure the suggestion IDs you have provided exist and have not already been approved/denied.",
+			string: "No se pudieron eliminar todas las sugerencias. Aségurate de introducir solo Ids. de sugerencias pendientes.",
 			context: "Shows why suggestions generally are not denied in the massdeny command"
 		},
 		"NO_ATTACHMENT_REMOVE_ERROR": {
-			string: "This suggestion does not have an attachment.",
+			string: "Esa sugerencia no tiene una imagen adjunta.",
 			context: "Error shown when a user attempts to remove an attachment from a suggestion that has no attachment"
 		},
 		"ATTACHMENT_REMOVED_TITLE": {
-			string: "Attachment Removed",
+			string: "Imagen adjunta eliminada.",
 			context: "Title for the Attachment Removed embed"
 		},
 		"ATTACH_REMOVE_LOG": {
-			string: "{{user}} removed the attachment from #{{id}}",
+			string: "{{user}} eliminó la imagen adjunta de #{{id}}",
 			context: "Title for the log embed when an attachment is removed from a suggestion",
 			replaced: {
 				user: {
@@ -2761,11 +2761,11 @@ module.exports = {
 			}
 		},
 		"USER_NOT_BLOCKED_ERROR": {
-			string: "This user is not blocked from using the bot on this server.",
+			string: "Ese/a miembro no ha recibido un bloqueo en este servidor.",
 			context: "Error shown when a user attempts to unblock a user who is not blocked on a server"
 		},
 		"UNBLOCK_SUCCESS": {
-			string: "**{{user}}** (`{{id}}`) has been unblocked from using the bot on this server.",
+			string: "**{{user}}** (`{{id}}`) ha sido desbloqueado/a.",
 			context: "Success message when a user is unblocked in a guild",
 			replaced: {
 				user: {
@@ -2779,7 +2779,7 @@ module.exports = {
 			}
 		},
 		"UNBLOCK_LOG_TITLE": {
-			string: "{{staff}} unblocked {{user}}",
+			string: "{{staff}} desbloqueó a {{user}}",
 			context: "Title of the log embed when a user is unblocked",
 			replaced: {
 				user: {
@@ -2793,7 +2793,7 @@ module.exports = {
 			}
 		},
 		"COOLDOWN_SPAM_FLAG": {
-			string: "{{mention}} ⚠️ You have been flagged by the command spam protection filter. This is generally caused when you use a lot of commands too quickly over a period of time. Due to this, you cannot use commands temporarily until a Suggester staff member reviews your situation. If you believe this is an error, please join {{support}} and contact our Support Team.",
+			string: "{{mention}} ⚠️ ¡Se ha restringido tu participación con el bot en el servidor debido a que se detectaron comportamientos extraños desde tu cuenta! Abre un ticket para que el personal pueda analizar la situación.",
 			context: "Message shown when a user triggers the command cooldown spam filter",
 			replaced: {
 				mention: {
@@ -2807,7 +2807,7 @@ module.exports = {
 			}
 		},
 		"COMMAND_COOLDOWN": {
-			string: "🕑 This command is on cooldown for {{time}} more second(s).",
+			string: "🕑 ¡Espera {{time}} segundo(s)!",
 			context: "Shown when a command is on cooldown and a user attempts to use it",
 			replaced: {
 				time: {
@@ -2877,11 +2877,11 @@ module.exports = {
 			}
 		},
 		"MISSING_ELEMENTS_HEADER": {
-			string: "Missing Elements",
+			string: "¡Elementos faltantes!",
 			context: "Denotes what elements are missing when some permissions/config elements are"
 		},
 		"HOW_TO_FIX_HEADER": {
-			string: "How to Fix",
+			string: "Cómo arreglar el problema",
 			context: "Shows how to fix missing configuration elements/permissions"
 		},
 		"FIX_MISSING_PERMISSIONS_INFO": {
@@ -3089,7 +3089,7 @@ module.exports = {
 			}
 		},
 		"SHARD_INFO": {
-			string: "This server is on shard {{shard}}.",
+			string: "Este servidor se encuentra en la shard {{shard}}.",
 			context: "Shows information about the current shard for the shard command",
 			replaced: {
 				shard: {
@@ -3607,15 +3607,15 @@ module.exports = {
 			context: "Error shown when the number of messages to import is invalid"
 		},
 		"VOTES_TITLE": {
-			string: "Votes",
+			string: "Votación",
 			context: "Header for the votes section of the suggestion embed"
 		},
 		"NO_SUGGESTIONS_FOUND": {
-			string: "No suggestions that matched your query were found",
+			string: "No se encontraron sugerencias que coincidieran con tu término de búsqueda.",
 			context: "Error shown when no suggestions are found for the top/down command"
 		},
 		"TOP_TITLE_NEW_AGAIN": {
-			string: "Top {{number}} Highest Voted Suggestions (showing {{min}}-{{max}} of {{number}})",
+			string: "Top #{{number}} Sugerencias Mejor Valoradas (mostrando {{min}}-{{max}} de {{number}})",
 			context: "Header for the top suggestions embed",
 			replaced: {
 				number: {
@@ -3633,7 +3633,7 @@ module.exports = {
 			}
 		},
 		"DOWN_TITLE_NEW": {
-			string: "Top {{number}} Lowest Voted Suggestions (showing {{min}}-{{max}} of {{number}})",
+			string: "Top #{{number}} Sugerencias Peor Valoradas (mostrando {{min}}-{{max}} de {{number}})",
 			context: "Header for the lowest voted suggestions embed",
 			replaced: {
 				number: {
@@ -3651,7 +3651,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_LOADING": {
-			string: "Collecting suggestion data, this may take a moment...",
+			string: "Colectando información, espera un momento...",
 			context: "Message shown when waiting for top 10 data to collect"
 		},
 		"COMMAND_DESC:ACKNOWLEDGEMENT": {
@@ -5100,7 +5100,7 @@ module.exports = {
 			}
 		},
 		"UNAVAILABLE": {
-			string: "Unavailable",
+			string: "No disponible",
 			context: "Describes something that is not available"
 		},
 		"TOP_TIME_INFO": {
@@ -5134,7 +5134,7 @@ module.exports = {
 			}
 		},
 		"SERVER_PREFIX": {
-			string: "My prefix is `{{prefix}}`, you can also just mention the bot like \"<@{{id}}> help\"",
+			string: "Mi prefijo es `{{prefix}}`, también puedes mencionar al bot. Ej: `<@{{id}}> ayuda`",
 			context: "Shows the configured prefix",
 			replaced: {
 				prefix: {
@@ -5148,7 +5148,7 @@ module.exports = {
 			}
 		},
 		"DUPE_REASON": {
-			string: "Duplicate of suggestion [#{{id}}]({{link}})",
+			string: "Duplicada de [#{{id}}]({{link}})",
 			context: "The reason for a duplicate suggestion in the dupe command",
 			replaced: {
 				link: {
@@ -5162,7 +5162,7 @@ module.exports = {
 			}
 		},
 		"DUPE_REASON_DENIED": {
-			string: "Duplicate of suggestion #{{id}}, which has been denied.",
+			string: "Duplicada de #{{id}}, la cual ha sido declinada",
 			context: "The reason for a duplicate suggestion in the dupe command when the suggestion is denied",
 			replaced: {
 				id: {
@@ -5172,7 +5172,7 @@ module.exports = {
 			}
 		},
 		"DUPE_REASON_DENIED_WITH_REASON": {
-			string: "Duplicate of suggestion #{{id}}, which has been denied with the following reason:\n{{reason}}",
+			string: "Duplicada de #{{id}}, la cual ha sido denegada con la razón:\n{{reason}}",
 			context: "The reason for a duplicate suggestion in the dupe command when the suggestion is denied and there's enough space for the reason",
 			replaced: {
 				id: {
@@ -5186,7 +5186,7 @@ module.exports = {
 			}
 		},
 		"DUPE_REASON_IMPLEMENTED": {
-			string: "Duplicate of suggestion #{{id}}, which has been implemented.",
+			string: "Duplicada de #{{id}}, la cual ha sido implementada.",
 			context: "The reason for a duplicate suggestion in the dupe command when the suggestion is implemented",
 			replaced: {
 				id: {
@@ -5196,7 +5196,7 @@ module.exports = {
 			}
 		},
 		"DUPE_REASON_REVIEW": {
-			string: "Duplicate of suggestion #{{id}}, which is currently awaiting review.",
+			string: "Duplicada de #{{id}}, la cual está pendiente de verificación",
 			context: "The reason for a duplicate suggestion in the dupe command when the suggestion is awaiting review",
 			replaced: {
 				id: {
@@ -5206,7 +5206,7 @@ module.exports = {
 			}
 		},
 		"DUPE_ORIGINAL_INVALID_ERROR": {
-			string: "You must provide a valid suggestion ID for the original suggestion",
+			string: "Debes introducir una Id. para la sugerencia original válida",
 			context: "Error shown when a suggestion ID provided in the dupe command for the original suggestion is invalid"
 		},
 		"CFG_COOLDOWN_INFO": {
@@ -5248,19 +5248,19 @@ module.exports = {
 			}
 		},
 		"EXEMPT_NO_ARGS_ERROR": {
-			string: "You must specify a user to exempt",
+			string: "Debes introducir un(a) miembro para eximir",
 			context: "Error shown when no user is speciied for the exempt command"
 		},
 		"EXEMPT_USER_BOT_ERROR": {
-			string: "This user is a bot, and therefore cannot submit suggestions",
+			string: "No puedes eximir a un bot",
 			context: "Error shown when a user tries to exempt a bot"
 		},
 		"EXEMPT_USER_NOT_MEMBER_ERROR": {
-			string: "This user is not a member of this server",
+			string: "Esa persona no es miembro del servidor",
 			context: "Error shown when a user tries to exempt a user who is not a member of the current server"
 		},
 		"EXEMPT_SUCCESS": {
-			string: "**{{user}}** (`{{id}}`) has been exempted from the suggestion cooldown. Next time they submit a suggestion they won't be affected by the configured cooldown. **This only applies to one suggestion, if they need exempted again you'll need to re-run this command.**",
+			string: "**{{user}}** (`{{id}}`) ha sido eximido/a del tiempo de espera actual",
 			context: "Success message when a user is exempted in a guild",
 			replaced: {
 				user: {
@@ -5274,7 +5274,7 @@ module.exports = {
 			}
 		},
 		"EXEMPT_LOG_TITLE": {
-			string: "{{staff}} exempted {{user}} from the suggestion cooldown",
+			string: "{{staff}} eximió a {{user}} de su tiempo de espera",
 			context: "Title of the log embed when a user is exempted",
 			replaced: {
 				user: {
@@ -5288,19 +5288,19 @@ module.exports = {
 			}
 		},
 		"EXEMPT_ALREADY_ERROR": {
-			string: "This user has already been exempted from the suggestion cooldown",
+			string: "Ese/a miembro ya fue eximido/a del tiempo de espera",
 			context: "Error shown when a user has already been exempted from the suggestion cooldown"
 		},
 		"EDIT_NOT_AUTHOR_ERROR": {
-			string: "You can only edit your own suggestions",
+			string: "Solo puedes editar tus propias sugerencias",
 			context: "Error shown when a user attempts to edit a suggestion that is not their's"
 		},
 		"NO_PENDING_EDIT_ERROR": {
-			string: "This suggestion has no pending edit.",
+			string: "Esa sugerencia no tiene una edición pendiente de verificación",
 			context: "Error shown when no suggestion edit is pending review"
 		},
 		"EDIT_APPROVE_DM_TITLE": {
-			string: "Your suggestion edit was approved in **{{server}}**!",
+			string: "¡Una edición que presentaste ha sido verificada!",
 			context: "Title for the DM notification of a suggestion edit being approved",
 			replaced: {
 				server: {
@@ -5310,7 +5310,7 @@ module.exports = {
 			}
 		},
 		"EDIT_APPROVE_DM_TITLE_FOLLOW": {
-			string: "A suggestion you follow was edited in **{{server}}**!",
+			string: "¡Una sugerencia que sigues ha sido editada!",
 			context: "Title for the DM notification of a suggestion being edited on a suggestion followed",
 			replaced: {
 				server: {
@@ -5320,7 +5320,7 @@ module.exports = {
 			}
 		},
 		"EDIT_DENY_DM_TITLE": {
-			string: "Your suggestion edit was denied in **{{server}}**!",
+			string: "¡Una edición que presentaste ha sido declinada!",
 			context: "Title for the DM notification of a suggestion edit being denied",
 			replaced: {
 				server: {
@@ -5330,7 +5330,7 @@ module.exports = {
 			}
 		},
 		"LOG_EDIT_DENY_TITLE": {
-			string: "{{user}} denied a suggestion edit on #{{id}}",
+			string: "{{user}} declinó la edición de #{{id}}",
 			context: "Title in the log embed when a suggestion edit is denied",
 			replaced: {
 				user: {
@@ -5344,7 +5344,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_EDIT_DM_TITLE": {
-			string: "Your suggestion was edited in **{{server}}**!",
+			string: "¡Una sugerencia que creaste ha sido editada!",
 			context: "Title for the DM notification of a suggestion being admin-edited",
 			replaced: {
 				server: {
@@ -5354,7 +5354,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_EDIT_DM_TITLE_FOLLOW": {
-			string: "A suggestion you follow was edited in **{{server}}**!",
+			string: "¡Una sugerencia que sigues ha sido editada!",
 			context: "Title for the DM notification of a followed suggestion being admin-edited",
 			replaced: {
 				server: {
@@ -5364,15 +5364,15 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_UPDATED_SELF": {
-			string: "Your suggestion has been updated!",
+			string: "¡Tu sugerencia ha sido editada!",
 			context: "Response when the user who edits is the suggester"
 		},
 		"SUGGESTION_UPDATED_NOT_SELF": {
-			string: "The suggestion has been updated!",
+			string: "¡La sugerencia ha sido editada!",
 			context: "Response when the user who edits is not the suggester"
 		},
 		"SUGGESTION_UPDATED_REVIEW": {
-			string: "Your suggestion edit has been submitted for review!",
+			string: "¡La edición de tu sugerencia ha sido enviada al personal para ser verificada!",
 			context: "Response when the suggestion has already been approved and the user edits it"
 		},
 		"COMMAND_DESC:PRIVACY": {
@@ -5481,7 +5481,7 @@ module.exports = {
 				"**Leave** `{{p}}` **as-is, it is replaced in the help command.**"
 		},
 		"NO_REASON": {
-			string: "No reason provided",
+			string: "Sin razón proporcionada",
 			context: "String when no reason is provided"
 		},
 		"BEAN_SUCCESS": {
@@ -5677,7 +5677,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_TRELLO_INFO": {
-			string: "Submitted by {{user}} ({{id}})\nSuggestion ID: {{sid}}",
+			string: "Creada por {{user}} ({{id}})\ Id.: {{sid}}",
 			context: "Information for the Trello card description",
 			replaced: {
 				user: {
@@ -6123,7 +6123,7 @@ module.exports = {
 			context: "Error shown when shards are still being spawned"
 		},
 		"SHARDS_DETAIL": {
-			string: "Servers: {{servers}}\nChannels: {{channels}}\nUsers: {{users}}\nMemory: {{memory}} MB\nAPI: {{api}} ms",
+			string: "Servidores: {{servers}}\nCanales: {{channels}}\nMiembros: {{users}}\nMemoria: {{memory}} MB\nAPI: {{api}} ms",
 			context: "Detailed shard information for the shard command",
 			replaced: {
 				servers: {
@@ -6171,11 +6171,11 @@ module.exports = {
 			}
 		},
 		"SEARCH_BAD_QUERY_ERROR": {
-			string: "Please make sure you specify a valid query",
+			string: "Introduce un término de búsqueda válido",
 			context: "Error shown when an invalid query is provided for the search command"
 		},
 		"NO_LINK_SEARCH": {
-			string: "Use `{{p}}info {{id}}` for info",
+			string: "Usa `{{p}}ainfo {{id}}` para ver más información",
 			context: "Shown when a suggestion does not have a message link to show in search directing them to the info comand",
 			replaced: {
 				p: {
@@ -6189,7 +6189,7 @@ module.exports = {
 			}
 		},
 		"SEARCH_TITLE": {
-			string: "Found {{total}} Suggestions (showing {{min}}-{{max}} of {{total}})",
+			string: "Se encontraron {{total}} sugerencias (mostrando {{min}}-{{max}} de {{total}})",
 			context: "Header for the search embed",
 			replaced: {
 				min: {
@@ -6207,7 +6207,7 @@ module.exports = {
 			}
 		},
 		"DENY_AUTOAPPROVE_DELETE_REDIRECT": {
-			string: "If you're trying to remove a suggestion, use the `{{command}}` command",
+			string: "Si quieres eliminar una sugerencia, utiliza el comando `{{command}}`",
 			context: "Shown when a user attempts to use deny and the mode is set to autoapprove",
 			replaced: {
 				command: {
@@ -6217,7 +6217,7 @@ module.exports = {
 			}
 		},
 		"CFG_DISABLED_CMDS_LIST": {
-			string: "{{num}} command(s) are disabled\n**List:** {{commands}}",
+			string: "{{num}} comando(s) deshabilitados\n**Lista:** {{commands}}",
 			context: "Shows the list of disabled commands",
 			replaced: {
 				num: {
@@ -6261,7 +6261,7 @@ module.exports = {
 			context: "Error shown when a command cannot be disabled"
 		},
 		"USER_BLOCKED_SLASH_RESPONSE": {
-			string: "You are currently blocked from using the bot.",
+			string: "Has sido bloqueado/a y no puedes utilizar el bot.",
 			context: "Error shown when a user is blocked and tries to use a slash command"
 		}
 	}

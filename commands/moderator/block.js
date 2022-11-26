@@ -27,7 +27,7 @@ module.exports = {
 
 		qServerDB.config.blocklist = qServerDB.config.blocklist.filter(b => typeof b === "string" || b.expires > Date.now());
 
-		if (args[0].toLowerCase() === "list") {
+		if (args[0].toLowerCase() === "lista") {
 			if (qServerDB.config.blocklist.length < 1) return message.channel.send(string(locale, "BLOCKLIST_EMPTY"));
 			let chunks = qServerDB.config.blocklist.chunk(20);
 			let embeds = [];
