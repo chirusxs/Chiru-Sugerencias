@@ -5134,7 +5134,7 @@ module.exports = {
 			}
 		},
 		"SERVER_PREFIX": {
-			string: "Mi prefijo es `{{prefix}}`, también puedes mencionar al bot. Ej: `<@{{id}}> ayuda`",
+			string: "Mi prefijo es `{{prefix}}`, también puedes mencionar al bot. Ej: \"<@{{id}}> ayuda\"",
 			context: "Shows the configured prefix",
 			replaced: {
 				prefix: {
