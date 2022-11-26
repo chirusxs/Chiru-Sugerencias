@@ -1151,11 +1151,11 @@ module.exports = {
 			}
 		},
 		"CFG_HELP_TITLE": {
-			string: "Configuration Help",
+			string: "Menú de configuración",
 			context: "Title for the configuration help embed"
 		},
 		"CFG_HELP_INFO": {
-			string: "Use `{{p}}config help [element name]` to view help for a specific element, or use the arrow reactions to navigate through the list!",
+			string: "Usa `{{p}}config ayuda [ajuste]` para ver más información sobre un ajuste",
 			context: "Description for navigating the config help embed",
 			replaced: {
 				p: {
@@ -1183,7 +1183,7 @@ module.exports = {
 			}
 		},
 		"CFG_LIST_TITLE": {
-			string: "List of Configuration Elements",
+			string: "Lista de ajustes",
 			context: "Title for the list of config elements in the config help embed"
 		},
 		"CFG_NO_ROLE_SPECIFIED_ERROR": {

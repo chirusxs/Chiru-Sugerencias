@@ -177,9 +177,9 @@ module.exports = {
 
 		let elements = [{
 			names: ["admin", "adminrole", "adminroles"],
-			name: "Admin Roles",
-			description: "Roles that are allowed to edit server configuration, as well as use all staff commands. (Members with the **Manage Server** permission also have access to these commands)",
-			examples: "`{{p}}config admin add Owner`\nAdds the \"Owner\" role as an admin role\n\n`{{p}}config admin add @Management`\nAdds the mentioned \"Management\" role as an admin role\n\n`{{p}}config admin add 658753146910408724`\nAdds a role with ID 658753146910408724 as an admin role\n\n`{{p}}config admin remove Owner`\nRemoves the \"Owner\" role from the list of admin roles",
+			name: "Roles administrativos",
+			description: "Los roles que tienen permisos administrativos pueden editar la configuración del bot y utilizar los comandos del personal. (Miembros con el permiso **Gestionar servidor** cuentan con acceso a esos comandos)",
+			examples: "`{{p}}config admin add Fundador`\nAgrega el rol \"Owner\" a los roles administrativos\n\n`{{p}}config admin add @Dirección`\nAgrega el rol mencionado \"Dirección\" a los roles administrativos\n\n`{{p}}config admin add 746989940767981609`\nAgrega el rol Dirección con su Id. a los roles administrativos\n\n`{{p}}config admin remove Fundador`\nQuita el rol \"Fundador\" de los roles administrativos",
 			docs: "adminroles",
 			cfg: async function() {
 
