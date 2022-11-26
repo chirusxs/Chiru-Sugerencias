@@ -1177,39 +1177,6 @@ module.exports = {
 			}
 		},
 		{
-			names: ["anonymous", "anon", "asuggest", "anonsuggest", "anonymoussuggest", "anonsuggestions", "anonymousuggest", "anonymoussuggestions", "anonymousuggestions"],
-			name: "Anonymous Suggestions",
-			description: "This setting controls whether or not users can submit anonymous suggestions.",
-			examples: "`{{p}}config anonymous on`\nEnables the ability to submit anonymous suggestions\n\n`{{p}}config anonymous off`\nDisables the ability to submit anonymous suggestion",
-			cfg: async function() {
-				if (!args[1]) return message.channel.send(string(locale, qServerDB.config.anon ? "CFG_ANONYMOUS_ENABLED" : "CFG_ANONYMOUS_DISABLED", ));
-				switch (args[1].toLowerCase()) {
-				case "enable":
-				case "on": {
-					if (!qServerDB.config.anon) {
-						qServerDB.config.anon = true;
-						await dbModify("Server", {id: server.id}, qServerDB);
-						return message.channel.send(string(locale, "CFG_ANONYMOUS_ENABLED", "success"));
-					} else return message.channel.send(string(locale, "CFG_ANONYMOUS_ALREADY_ENABLED", {}, "error"));
-				}
-				case "disable":
-				case "off": {
-					if (qServerDB.config.anon) {
-						qServerDB.config.anon = false;
-						await dbModify("Server", {id: server.id}, qServerDB);
-						return message.channel.send(string(locale, "CFG_ANONYMOUS_DISABLED", {}, "success"));
-					} else return message.channel.send(string(locale, "CFG_ANONYMOUS_ALREADY_DISABLED", {}, "error"));
-				}
-				case "toggle":
-					qServerDB.config.anon = !qServerDB.config.anon;
-					await dbModify("Server", {id: server.id}, qServerDB);
-					return message.channel.send(string(locale, qServerDB.config.anon ? "CFG_ANONYMOUS_ENABLED" : "CFG_ANONYMOUS_DISABLED", "success"));
-				default:
-					return message.channel.send(string(locale, "ON_OFF_TOGGLE_ERROR", {}, "error"));
-				}
-			}
-		},
-		{
 			names: ["votecount", "opinion", "liveopinion", "votecounts", "livevotes", "livevote"],
 			name: "Live Vote Count",
 			description: "This setting controls whether or not the live vote count is shown on the suggestion embed",
