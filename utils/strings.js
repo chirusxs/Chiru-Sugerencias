@@ -1793,7 +1793,7 @@ module.exports = {
 			context: "Shown when there is a suggestion with no content"
 		},
 		"SUGGESTION_FEED_LINK": {
-			string: "Enlace SUGGESTION_FEED_LINK",
+			string: "Enlace de la sugerencia",
 			context: "Hyperlink title to the suggestions feed post"
 		},
 		"COMMENT_TITLE_ANONYMOUS": {
