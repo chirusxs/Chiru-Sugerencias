@@ -4495,7 +4495,7 @@ module.exports = {
 			context: "Error shown when a server that is not the current one has a config subcommand run"
 		},
 		"CONFIG_NAME:ADMIN": {
-			string: "Admin Roles",
+			string: "Roles administrativos",
 			context: "Name of the Admin Roles config element"
 		},
 		"CONFIG_DESC:ADMIN": {
