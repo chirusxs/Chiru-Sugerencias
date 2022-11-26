@@ -2363,7 +2363,7 @@ module.exports = {
 			}
 		},
 		"VOTE_COUNT_OPINION": {
-			string: "Votos:",
+			string: "Total:",
 			context: "Denotes the vote opinion (upvotes-downvotes) for the suggestion"
 		},
 		"VOTE_COUNT_UP": {
