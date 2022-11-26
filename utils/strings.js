@@ -729,15 +729,15 @@ module.exports = {
 			}
 		},
 		"NO_SUGGESTION_ERROR": {
-			string: "Please provide a suggestion!",
+			string: "¡Debes introducir una sugerencia!",
 			context: "Error when a user does not provide a suggestion in the suggest command"
 		},
 		"EDIT_NO_CONTENT_ERROR": {
-			string: "Please provide new content for the suggestion!",
+			string: "¡Debes introducir el nuevo contenido para la sugerencia!",
 			context: "Error when the user does not provide a suggestion content in the edit command"
 		},
 		"TOO_LONG_SUGGESTION_ERROR_NEW": {
-			string: "Suggestions cannot be longer than 1900 characters.",
+			string: "Las sugerencias no pueden tener más de 1900 caracteres.",
 			context: "Error when a suggestion is too long"
 		},
 		"NO_REVIEW_CHANNEL_ERROR": {
@@ -749,7 +749,7 @@ module.exports = {
 			context: "Error when the configured suggestions channel is not found"
 		},
 		"SUGGESTION_FROM_TITLE": {
-			string: "Suggestion from {{user}}",
+			string: "Sugerencia de {{user}}",
 			context: "Title for embeds showing who the suggesting user is",
 			replaced: {
 				user: {
@@ -759,7 +759,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_FOOTER": {
-			string: "Suggestion ID: {{id}} | Submitted at",
+			string: "Id. de sugerencia: {{id}} | Creada el",
 			context: "Footer for suggestion embeds",
 			replaced: {
 				id: {
@@ -769,7 +769,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_FOOTER_WITH_EDIT": {
-			string: "Suggestion ID: {{id}} | Edited by {{editor}} | Submitted at",
+			string: "Id. de sugerencia: {{id}} | Editada por {{editor}} | Creada el",
 			context: "Footer for suggestion embeds",
 			replaced: {
 				id: {
@@ -783,11 +783,11 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_SUBMITTED_STAFF_REVIEW_SUCCESS": {
-			string: "Your suggestion has been submitted to the server staff for review!",
+			string: "¡Tu sugerencia ha sido enviada al staff para su verificación!",
 			context: "Success message when a suggestion is sent for staff review"
 		},
 		"SUGGESTION_REVIEW_EMBED_TITLE": {
-			string: "Suggestion Awaiting Review (#{{id}})",
+			string: "Sugerencia sin verificar (#{{id}})",
 			context: "Title for the suggestion review embed",
 			replaced: {
 				id: {
@@ -797,7 +797,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_REVIEW_EDIT_EMBED_TITLE": {
-			string: "Suggestion Edit Awaiting Review (#{{id}})",
+			string: "Edición de sugerencia sin verificar (#{{id}})",
 			context: "Title for the suggestion edit review embed",
 			replaced: {
 				id: {
@@ -807,7 +807,7 @@ module.exports = {
 			}
 		},
 		"USER_INFO_HEADER": {
-			string: "{{user}} (ID: {{id}})",
+			string: "{{user}} (Id: {{id}})",
 			context: "Used when a header using the user's tag and ID is present",
 			replaced: {
 				user: {
@@ -821,7 +821,7 @@ module.exports = {
 			}
 		},
 		"USER_INFO_HEADER_CB": {
-			string: "{{user}} (ID: `{{id}}`)",
+			string: "{{user}} (Id: `{{id}}`)",
 			context: "Used when a header using the user's tag and ID is present (codeblock version)",
 			replaced: {
 				user: {
@@ -835,11 +835,11 @@ module.exports = {
 			}
 		},
 		"APPROVE_DENY_HEADER": {
-			string: "Approve/Deny",
+			string: "Verificar/Declinar",
 			context: "Header for the approve/deny field of the review embed"
 		},
 		"REVIEW_COMMAND_INFO": { //Keeping in case of a revert to old description during testing
-			string: "Use **{{prefix}}approve {{id}}** to send to {{channel}}\nUse **{{prefix}}deny {{id}}** to deny",
+			string: "Usa **{{prefix}}verificar {{id}}** para enviar a {{channel}}\nUsa **{{prefix}}declinar {{id}}** para rechazar",
 			context: "Information in the review embed showing instructions on how to approve/deny",
 			replaced: {
 				prefix: {
@@ -857,7 +857,7 @@ module.exports = {
 			}
 		},
 		"REVIEW_COMMAND_INFO_NEW": {
-			string: "React with {{approve}} to send to {{channel}}\nReact with {{deny}} to deny",
+			string: "Reacciona con {{approve}} para enviar a {{channel}}\nReacciona con {{deny}} para declinar",
 			context: "Information in the review embed showing instructions on how to approve/deny",
 			replaced: {
 				approve: {
@@ -875,19 +875,19 @@ module.exports = {
 			}
 		},
 		"WITH_ATTACHMENT_HEADER": {
-			string: "With Attachment",
+			string: "Con imagen",
 			context: "Header used when a suggestion has an attachment"
 		},
 		"SUGGESTION_HEADER": {
-			string: "Suggestion",
+			string: "Sugerencia",
 			context: "Header used for the suggestion content"
 		},
 		"SUGGESTION_VOTES": {
-			string: "Votes:",
+			string: "Votos:",
 			context: "Header used for votes in the context \"Votes: 3\""
 		},
 		"LOG_SUGGESTION_SUBMITTED_REVIEW_TITLE": {
-			string: "{{user}} submitted a suggestion for review",
+			string: "{{user}} subió una sugerencia pendiente de verificar",
 			context: "Title in the log embed when a suggestion is submitted for review",
 			replaced: {
 				user: {
@@ -897,7 +897,7 @@ module.exports = {
 			}
 		},
 		"LOG_SUGGESTION_SUBMITTED_REVIEW_TITLE_ANON": {
-			string: "{{user}} submitted an anonymous suggestion for review",
+			string: "{{user}} subió una sugerencia anónima pendiente de verificar",
 			context: "Title in the log embed when an anonymous suggestion is submitted for review",
 			replaced: {
 				user: {
@@ -907,7 +907,7 @@ module.exports = {
 			}
 		},
 		"LOG_EDIT_SUBMITTED_REVIEW_TITLE": {
-			string: "{{user}} submitted a suggestion edit for review on #{{id}}",
+			string: "{{user}} ha editado la sugerencia #{{id}} y necesita ser verificada",
 			context: "Title in the log embed when a suggestion edit is submitted for review",
 			replaced: {
 				user: {
@@ -921,7 +921,7 @@ module.exports = {
 			}
 		},
 		"LOG_EDIT_SUBMITTED_ON_APPROVED_TITLE": {
-			string: "{{user}} edited #{{id}} (which is currently awaiting review)",
+			string: "{{user}} editó #{{id}} (que ya estaba esperando verificación)",
 			context: "Title in the log embed when a suggestion in review is edited",
 			replaced: {
 				user: {
@@ -935,7 +935,7 @@ module.exports = {
 			}
 		},
 		"LOG_EDIT_TITLE": {
-			string: "{{user}} edited #{{id}}",
+			string: "{{user}} editó #{{id}}",
 			context: "Title in the log embed when a suggestion is edited",
 			replaced: {
 				user: {
@@ -949,7 +949,7 @@ module.exports = {
 			}
 		},
 		"LOG_EDIT_APPROVE_TITLE": {
-			string: "{{user}} approved a suggestion edit on #{{id}}",
+			string: "{{user}} verificó una edición #{{id}}",
 			context: "Title in the log embed when a suggestion edit is approved",
 			replaced: {
 				user: {
@@ -963,7 +963,7 @@ module.exports = {
 			}
 		},
 		"LOG_SUGGESTION_SUBMITTED_AUTOAPPROVE_TITLE": {
-			string: "{{user}} submitted a suggestion",
+			string: "{{user}} subió una sugerencia",
 			context: "Title in the log embed when a suggestion is submitted in autoapprove mode",
 			replaced: {
 				user: {
@@ -973,7 +973,7 @@ module.exports = {
 			}
 		},
 		"LOG_SUGGESTION_SUBMITTED_AUTOAPPROVE_TITLE_ANON": {
-			string: "{{user}} submitted an anonymous suggestion",
+			string: "{{user}} subió una sugerencia anónima",
 			context: "Title in the log embed when an anonymous suggestion is submitted in autoapprove mode",
 			replaced: {
 				user: {
@@ -983,7 +983,7 @@ module.exports = {
 			}
 		},
 		"LOG_SUGGESTION_SUBMITTED_FOOTER": {
-			string: "Suggestion ID: {{id}} | User ID: {{user}}",
+			string: "Id de sugerencia: {{id}} | Id de miembro: {{user}}",
 			context: "Description of the log embed when a user is shown",
 			replaced: {
 				id: {
@@ -997,7 +997,7 @@ module.exports = {
 			}
 		},
 		"SUGGESTION_SUBMITTED_AUTOAPPROVE_SUCCESS": {
-			string: "Your suggestion has been added to the {{channel}} channel!",
+			string: "¡Tu sugerencia ha sido subida al canal {{channel}}!",
 			context: "Success message when a suggestion is submitted in the autoapprove mode",
 			replaced: {
 				channel: {
@@ -1017,35 +1017,35 @@ module.exports = {
 			}
 		},
 		"VERIFY_ACK_DEVELOPER_GA": {
-			string: "Developer/Global Administrator",
+			string: "Desarrollador(a)",
 			context: "Verify acknowledgement for Developer/Global Administrator"
 		},
 		"VERIFY_ACK_GLOBAL_STAFF": {
-			string: "Suggester Staff Team",
+			string: "Miembro del personal",
 			context: "Verify acknowledgement for Suggester Staff Team"
 		},
 		"VERIFY_ACK_TRANSLATOR": {
-			string: "Translator",
+			string: "Traductor",
 			context: "Verify acknowledgement for Translator"
 		},
 		"VERIFY_ACK_GLOBAL_NO_COOLDOWN": {
-			string: "Exempt From Cooldowns",
+			string: "Exento/a de cooldown",
 			context: "Verify acknowledgement for Exempt from Cooldowns"
 		},
 		"VERIFY_ACK_GLOBAL_PROTECTED": {
-			string: "Protected",
+			string: "Protegido/a",
 			context: "Verify acknowledgement for Protected"
 		},
 		"VERIFY_ACK_GLOBAL_BLOCK": {
-			string: "Blocked Globally",
+			string: "Vetado/a",
 			context: "Verify acknowledgement for Blocked Globally"
 		},
 		"VERIFY_ACK_SERVER_ADMIN": {
-			string: "Server Admin",
+			string: "Miembro de la dirección",
 			context: "Verify acknowledgement for Server Admin"
 		},
 		"VERIFY_ACK_SERVER_STAFF": {
-			string: "Server Staff",
+			string: "Miembro del personal",
 			context: "Verify acknowledgement for Server Staff"
 		},
 		"VERIFY_ACK_SERVER_BLOCK": {
