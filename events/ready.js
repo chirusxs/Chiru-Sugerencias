@@ -33,7 +33,7 @@ module.exports = async (Discord, client) => {
 	}
 
 	let presences = [
-		["PLAYING", `Envía una sugerencia con el comando >suggest`],
+		["PLAYING", `Envía una sugerencia con el comando -sugerencia`],
 		["WATCHING", async () => `${(await Suggestion.countDocuments())} sugerencias`]
 	];
 
