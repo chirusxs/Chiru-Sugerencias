@@ -10,7 +10,7 @@ module.exports = {
 	controls: {
 		name: "verificar",
 		permission: 3,
-		usage: "verificar [id de sugerencia] (comentario)",
+		usage: "verificar [id de sugerencia] (razón)",
 		description: "Verifica una sugerencia",
 		image: "images/Approve.gif",
 		examples: "`{{p}}verificar 1`\nVerifica la sugerencia #35\n\n`{{p}}verificar 12 ¡Tu sugerencia ha sido verificada!`\nAprueba la sugerencia #12 y agrega un comentario",
